@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import LoginImage from "src/assets/LoginImage.svg";
+import KakaoLogin from "src/assets/KakaoLogin.svg";
 import "./style.css";
 
 
@@ -22,12 +24,12 @@ export const LoginPage = () => {
       <img
         className="group"
         alt="Group"
-        src="https://c.animaapp.com/Ronzq3de/img/group-1000004966.png"
+        src={LoginImage}
       />
       <img
         className="kakao-login"
         alt="Kakao login"
-        src="https://c.animaapp.com/Ronzq3de/img/kakao-login.png"
+        src={KakaoLogin}
         onClick={handleKakaoLogin}
       />
     </div>
