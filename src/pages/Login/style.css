@@ -1,0 +1,52 @@
+.login {
+    background-color: #ffffff;
+    height: 812px;
+    position: relative;
+    width: 375px;
+  }
+  
+  .login .text-wrapper {
+    color: #000000;
+    font-family: "Product Sans-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    left: 45px;
+    letter-spacing: 0;
+    line-height: 40px;
+    position: absolute;
+    text-align: center;
+    top: 477px;
+    white-space: nowrap;
+    width: 285px;
+  }
+  
+  .login .div {
+    color: #515979;
+    font-family: "Product Sans-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 29px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    text-align: center;
+    top: 533px;
+    width: 318px;
+  }
+  
+  .login .group {
+    height: 381px;
+    left: 0;
+    position: absolute;
+    top: 53px;
+    width: 375px;
+  }
+  
+  .login .kakao-login {
+    height: 45px;
+    left: 38px;
+    position: absolute;
+    top: 723px;
+    width: 300px;
+  }
+  
