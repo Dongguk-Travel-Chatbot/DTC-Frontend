@@ -1,0 +1,1 @@
+export { BigOutline } from "./BigOutline";

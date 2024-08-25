@@ -1,0 +1,50 @@
+.big-outline {
+  background-color: var(--lightprimary-5);
+  border: 1px solid;
+  border-color: var(--lightgray-6);
+  border-radius: 8px;
+  height: 50px;
+  position: relative;
+  width: 342px;
+}
+
+.big-outline .input-label {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  height: 18px;
+  justify-content: center;
+  left: 11px;
+  padding: 0px 3px;
+  position: absolute;
+  top: 24px;
+  width: 315px;
+}
+
+.big-outline .text-wrapper {
+  background-color: var(--lightprimary-5);
+  border : none;
+  color: var(--lightgray-10);
+  flex: 1;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 18px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.big-outline .label {
+  color: var(--lightgray-7);
+  font-family: "Roboto", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  height: 16px;
+  left: 14px;
+  letter-spacing: 0.25px;
+  line-height: 16px;
+  position: absolute;
+  top: 5px;
+  white-space: nowrap;
+}
