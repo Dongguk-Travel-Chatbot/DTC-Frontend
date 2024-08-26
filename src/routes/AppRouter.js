@@ -11,7 +11,7 @@ export const AppRouter = () => {
           <Route path="/" element={<LoginPage />} />
           <Route exact path='/kakao/callback' element={<Redirection />} />
           <Route path='/sign-up' element={<SignUp />} />
-          <Route path="travelcommunity" element={<TravelCommunty />} />
+          <Route path='/travelcommunity' element={<TravelCommunty />} />
         </Routes>
       </BrowserRouter>
     );

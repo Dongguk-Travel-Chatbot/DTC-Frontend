@@ -10,7 +10,7 @@
   left: 20px;
   object-fit: cover;
   position: absolute;
-  top: 59px;
+  top: 58px;
   width: 333px;
 }
 
@@ -67,7 +67,7 @@
 
 .post .post-scrap {
   height: 16px;
-  left: 20px;
+  left: 83px;
   position: absolute;
   top: 36px;
   width: 30px;
@@ -113,7 +113,7 @@
 
 .post .post-like {
   height: 16px;
-  left: 83px;
+  left: 20px;
   position: absolute;
   top: 36px;
   width: 26px;

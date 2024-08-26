@@ -18,12 +18,11 @@ export const TravelCommunty = () => {
         },
       })
       .then((response) => {
-        setPosts(response.data.data)
+        setPosts(response.data.data); // 데이터를 성공적으로 받아오면 posts 업데이트
       })
       .catch((error) => {
         console.error("Error exchanging code:", error);
       });
-      console.log(posts)
   }, []);
 
   return (
@@ -31,8 +30,8 @@ export const TravelCommunty = () => {
       <PageHeader className="page-header-instance" />
 
       {
-        posts.map(function(post, i){
-          return <Post className="post-instance" props={post} key={i}/>
+        posts.map(function(eachpost, i) {
+          return <Post className="post-instance" props={eachpost}/>
         })
       }
 
