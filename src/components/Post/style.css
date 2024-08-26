@@ -20,7 +20,7 @@
   font-size: 12.5px;
   font-weight: 300;
   height: 14px;
-  left: 115px;
+  left: 120px;
   letter-spacing: 0;
   line-height: 14px;
   position: absolute;
@@ -48,7 +48,7 @@
   font-size: 12px;
   font-weight: 300;
   height: 14px;
-  left: 316px;
+  right: 60px;
   letter-spacing: -0.2px;
   line-height: normal;
   position: absolute;
@@ -58,7 +58,7 @@
 
 .post .image {
   height: 25px;
-  left: 285px;
+  left: 322px;
   object-fit: cover;
   position: absolute;
   top: 28px;
