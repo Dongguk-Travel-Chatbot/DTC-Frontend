@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "Gmarket Sans TTF-Light";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/65b0be41c83abf8b915a6ad0/fonts/gmarketsansttflight.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Gmarket Sans TTF-Medium";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/65b0be41c83abf8b915a6ad0/fonts/gmarketsansttfmedium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Gmarket Sans TTF-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6421572567398b1aca927889/fonts/gmarketsansttfbold.ttf")
+    format("truetype");
+}
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
       * {
         -webkit-font-smoothing: antialiased;

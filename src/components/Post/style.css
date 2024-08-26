@@ -1,0 +1,134 @@
+.post {
+  background-color: #ffffff;
+  height: 60px;
+  position: relative;
+  width: 375px;
+}
+
+.post .line {
+  height: 1px;
+  left: 20px;
+  object-fit: cover;
+  position: absolute;
+  top: 59px;
+  width: 333px;
+}
+
+.post .text-wrapper {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 14px;
+  left: 115px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 37px;
+  white-space: nowrap;
+}
+
+.post .div {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 28px;
+  left: 20px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 8px;
+  width: 96px;
+}
+
+.post .text-wrapper-2 {
+  color: #a1a1a1;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  height: 14px;
+  left: 316px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 33px;
+  white-space: nowrap;
+}
+
+.post .image {
+  height: 25px;
+  left: 285px;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 25px;
+}
+
+.post .post-scrap {
+  height: 16px;
+  left: 20px;
+  position: absolute;
+  top: 36px;
+  width: 30px;
+}
+
+.post .text-wrapper-3 {
+  color: var(--steel-gray-540);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 16px;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.post .vector {
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 12px;
+}
+
+.post .post-comment {
+  height: 16px;
+  left: 51px;
+  position: absolute;
+  top: 36px;
+  width: 30px;
+}
+
+.post .img {
+  height: 11px;
+  left: 0;
+  position: absolute;
+  top: 3px;
+  width: 12px;
+}
+
+.post .post-like {
+  height: 16px;
+  left: 83px;
+  position: absolute;
+  top: 36px;
+  width: 26px;
+}
+
+.post .text-wrapper-4 {
+  color: var(--steel-gray-540);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 16px;
+  left: 13px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}

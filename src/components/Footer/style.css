@@ -1,0 +1,94 @@
+.footer {
+  height: 84px;
+  width: 376px;
+}
+
+.footer .overlap-group {
+  height: 84px;
+  position: relative;
+}
+
+.footer .footer-rectangle {
+  background-color: #ffffff;
+  height: 84px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 375px;
+}
+
+.footer .user {
+  background-color: #ffffff;
+  height: 84px;
+  left: 282px;
+  position: absolute;
+  top: 0;
+  width: 94px;
+}
+
+.footer .icons-user {
+  height: 24px;
+  left: 37px;
+  position: relative;
+  top: 29px;
+  width: 24px;
+}
+
+.footer .user-2 {
+  height: 22px;
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  width: 22px;
+}
+
+.footer .community {
+  background-color: #ffffff;
+  height: 84px;
+  left: 188px;
+  position: absolute;
+  top: 0;
+  width: 94px;
+}
+
+.footer .community-2 {
+  height: 26px;
+  left: 36px;
+  position: absolute;
+  top: 28px;
+  width: 26px;
+}
+
+.footer .chat {
+  background-color: #ffffff;
+  height: 84px;
+  left: 94px;
+  position: absolute;
+  top: 0;
+  width: 94px;
+}
+
+.footer .icons-chat {
+  height: 24px;
+  left: 37px;
+  position: absolute;
+  top: 29px;
+  width: 25px;
+}
+
+.footer .home {
+  background-color: #ffffff;
+  height: 84px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 94px;
+}
+
+.footer .icons-home {
+  height: 24px;
+  left: 37px;
+  position: absolute;
+  top: 29px;
+  width: 24px;
+}
