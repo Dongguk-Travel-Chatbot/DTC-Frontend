@@ -28,13 +28,11 @@ export const TravelCommunty = () => {
   return (
     <div className="travel-communty">
       <PageHeader className="page-header-instance" />
-
       {
         posts.map(function(eachpost, i) {
           return <Post className="post-instance" props={eachpost}/>
         })
       }
-
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
     </div>
   );
