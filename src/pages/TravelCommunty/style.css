@@ -1,0 +1,29 @@
+.travel-communty {
+  background-color: #ffffff;
+  height: 812px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+
+.travel-communty .post-instance {
+  left: 0 !important;
+  top: 93px !important;
+}
+
+.travel-communty .page-header-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 1px !important;
+}
+
+.travel-communty .footer-instance {
+  background-color: transparent !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 728px !important;
+}
+
+.travel-communty .design-component-instance-node {
+  width: 376px !important;
+}
