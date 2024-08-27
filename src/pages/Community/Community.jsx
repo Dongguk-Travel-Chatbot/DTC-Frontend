@@ -4,9 +4,16 @@ import "./style.css";
 import { Footer } from "src/components/Footer";
 
 export const Community = () => {
+
+  let headerOption = {
+    pageTitle : "커뮤니티",
+    backIcon : true,
+    writeIcon : false
+  }
+
   return (
     <div className="community">
-      <PageHeader className="page-header-instance" />
+      <PageHeader className="page-header-instance" props={headerOption}/>
 
       <div className="hot-community-button">
         <div className="card">

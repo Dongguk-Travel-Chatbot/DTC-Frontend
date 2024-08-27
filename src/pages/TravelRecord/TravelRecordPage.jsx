@@ -26,6 +26,11 @@ export const TravelRecordPage = () => {
 
   return (
     <div className="travel-record-screen">
+      <ReactIconsFi
+        className="more-info-icons"
+        reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
+      />
+      
       {
         records.map(function(record, i) {
           return <TravelRecord className="travel-record-instance" props={record} key={i}/>
@@ -38,10 +43,8 @@ export const TravelRecordPage = () => {
         </div>
         <div className="text-wrapper-5" onClick={()=>{navigate('/travel-plan')}}>여행계획</div>
       </div>
-      <ReactIconsFi
-        className="more-info-icons"
-        reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
-      />
+      
+      <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
     </div>
   );
 };

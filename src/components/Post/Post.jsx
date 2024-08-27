@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import Like from "src/assets/Like.svg"
 import Comment from "src/assets/Comment.svg"
@@ -22,13 +22,13 @@ export const Post = ({ className, props }) => {
   }
 
   const profileImages = {
-    1: ProfileDog,
-    2: ProfileRabbit,
-    3: ProfileBear,
-    4: ProfileFox,
-    5: ProfileCat,
-    6: ProfileKoala,
-    7: ProfileLion,
+    0: ProfileDog,
+    1: ProfileRabbit,
+    2: ProfileBear,
+    3: ProfileFox,
+    4: ProfileCat,
+    5: ProfileKoala,
+    6: ProfileLion,
   };
   
   const profileImage = profileImages[props.user.image];

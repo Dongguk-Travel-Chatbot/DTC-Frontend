@@ -32,13 +32,13 @@ export const Mypage = () => {
   }, []);
 
   const profileImages = {
-    1: ProfileDog,
-    2: ProfileRabbit,
-    3: ProfileBear,
-    4: ProfileFox,
-    5: ProfileCat,
-    6: ProfileKoala,
-    7: ProfileLion,
+    0: ProfileDog,
+    1: ProfileRabbit,
+    2: ProfileBear,
+    3: ProfileFox,
+    4: ProfileCat,
+    5: ProfileKoala,
+    6: ProfileLion,
   };
   const profileImage = profileImages[user.image];
 
