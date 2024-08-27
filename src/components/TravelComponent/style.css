@@ -1,0 +1,182 @@
+.travel-component {
+  align-items: flex-start;
+  border: 2px solid;
+  border-color: #00000080;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 97px;
+  padding: 0px 17px;
+  position: relative;
+  width: 335px;
+}
+
+.travel-component .travel-title {
+  align-items: center;
+  display: flex;
+  gap: 4px;
+  height: 39px;
+  justify-content: space-around;
+  position: relative;
+  width: 267px;
+}
+
+.travel-component .text-wrapper {
+  color: #252525;
+  flex: 1;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  height: 1px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+}
+
+.travel-component .travel-content {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 297px;
+}
+
+.travel-component .content {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.travel-component .location {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  position: relative;
+}
+
+.travel-component .div {
+  height: 14.33px;
+  margin-right: -2px;
+  position: relative;
+  width: 47.5px;
+}
+
+.travel-component .vector-stroke {
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
+.travel-component .img {
+  height: 5px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 5px;
+}
+
+.travel-component .text-wrapper-2 {
+  color: #252525b2;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.travel-component .calender {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 4px;
+  position: relative;
+}
+
+.travel-component .calendar {
+  height: 14.33px;
+  margin-right: -2px;
+  position: relative;
+  width: 143px;
+}
+
+.travel-component .overlap-group {
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 13px;
+}
+
+.travel-component .vector-stroke-2 {
+  height: 3px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.travel-component .vector-stroke-3 {
+  height: 3px;
+  left: 9px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.travel-component .vector-stroke-4 {
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+}
+
+.travel-component .vector-stroke-5 {
+  height: 13px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 13px;
+}
+
+.travel-component .vector-stroke-6 {
+  height: 1px;
+  left: 6px;
+  position: absolute;
+  top: 8px;
+  width: 1px;
+}
+
+.travel-component .vector-stroke-7 {
+  height: 1px;
+  left: 3px;
+  position: absolute;
+  top: 8px;
+  width: 1px;
+}
+
+.travel-component .vector-stroke-8 {
+  height: 1px;
+  left: 3px;
+  position: absolute;
+  top: 10px;
+  width: 1px;
+}
+
+.travel-component .status {
+  position: relative;
+  width: 19px;
+}
