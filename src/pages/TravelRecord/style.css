@@ -1,0 +1,72 @@
+.travel-record-screen {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.travel-record-screen .travel-record-instance {
+  left: 20px !important;
+  top: 135px ;
+}
+
+.travel-record-screen .travel-status {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 36px;
+  height: 22px;
+  left: 108px;
+  position: absolute;
+  top: 55px;
+}
+
+.travel-record-screen .travel-record-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: -3px;
+  position: relative;
+}
+
+.travel-record-screen .text-wrapper-4 {
+  color: #252525;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.travel-record-screen .travel-record-3 {
+  background-color: #252525;
+  border-radius: 26px;
+  height: 3px;
+  position: relative;
+  width: 36px;
+}
+
+.travel-record-screen .text-wrapper-5 {
+  color: #25252566;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.travel-record-screen .more-info-icons {
+  height: 24px !important;
+  left: 332px !important;
+  top: 91px !important;
+  width: 24px !important;
+}
