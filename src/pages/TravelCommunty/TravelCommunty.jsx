@@ -9,6 +9,12 @@ import { instance } from "src/apis/axios";
 export const TravelCommunty = () => {
 
   let [posts, setPosts] = useState([]);
+  let headerOption = {
+    pageTitle : "여행 게시판",
+    backIcon : true,
+    writeIcon : true,
+    writeUrl : "/travel-post"
+  }
 
   useEffect(() => {
     instance
@@ -18,7 +24,7 @@ export const TravelCommunty = () => {
         },
       })
       .then((response) => {
-        setPosts(response.data.data); // 데이터를 성공적으로 받아오면 posts 업데이트
+        setPosts(response.data.data.content); // 데이터를 성공적으로 받아오면 posts 업데이트
       })
       .catch((error) => {
         console.error("Error exchanging code:", error);
@@ -27,7 +33,7 @@ export const TravelCommunty = () => {
 
   return (
     <div className="travel-communty">
-      <PageHeader className="page-header-instance" />
+      <PageHeader className="page-header-instance" props={headerOption}/>
       {
         posts.map(function(eachpost, i) {
           return <Post className="post-instance" props={eachpost}/>

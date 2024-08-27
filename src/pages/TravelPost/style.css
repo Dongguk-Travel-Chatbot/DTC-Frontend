@@ -1,0 +1,70 @@
+.travel-post {
+  background-color: #ffffff;
+  height: 812px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+
+.travel-post .post-write {
+  height: 161px;
+  left: 21px;
+  position: absolute;
+  top: 103px;
+  width: 337px;
+}
+
+.travel-post .menu {
+  color: #4a6375;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 323px;
+  border: none;
+}
+
+.travel-post .text-wrapper {
+  color: var(--greygrey);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  left: 6px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 50px;
+  width: 320px;
+  height: 500px;
+  border: none; 
+}
+
+.travel-post .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 32px;
+  width: 333px;
+}
+
+.travel-post .clip-travel {
+  background-color: #ffffff;
+  height: 84px;
+  left: 0;
+  position: absolute;
+  top: 728px;
+  width: 375px;
+}
+
+.travel-post .img {
+  height: 20px;
+  left: 23px;
+  position: absolute;
+  top: 32px;
+  width: 20px;
+}
