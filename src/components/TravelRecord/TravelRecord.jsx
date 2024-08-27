@@ -7,6 +7,12 @@ import React from "react";
 import "./style.css";
 
 export const TravelRecord = ({ className, props }) => {
+  
+  const currentDate = new Date();
+  const departDate = new Date(props.depart_at);
+  const timeDifference = departDate - currentDate;
+  const daysRemaining = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
   return (
     <div className={`travel-record ${className}`}>
       <div className="travel-image" />
@@ -39,7 +45,7 @@ export const TravelRecord = ({ className, props }) => {
             </div>
           </div>
           <div className="status">
-            <div className="text-wrapper-3">D-Day</div>
+            <div className="text-wrapper-3">{daysRemaining < 0 ? '여행종료' : 'D-'+{daysRemaining}}</div>
           </div>
         </div>
       </div>

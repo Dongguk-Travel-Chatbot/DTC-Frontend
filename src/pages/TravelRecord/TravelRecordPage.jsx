@@ -15,7 +15,8 @@ export const TravelRecordPage = () => {
         },
       })
       .then((response) => {
-        setRecords(response.data.data.reocrds);
+        console.log(response.data.data.records);
+        setRecords(response.data.data.records);
         console.log(records);
       })
       .catch((error) => {
