@@ -9,6 +9,7 @@ import { Mypage } from "src/pages/Mypage";
 import { TravelRecordPage } from "src/pages/TravelRecord";
 
 export const AppRouter = () => {
+
     return (
       <BrowserRouter>
         <Routes>
@@ -24,4 +25,3 @@ export const AppRouter = () => {
       </BrowserRouter>
     );
   };
-  
