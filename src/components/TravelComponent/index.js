@@ -1,0 +1,1 @@
+export { TravelComponent } from "./TravelComponent";
