@@ -1,0 +1,119 @@
+.hot-post-in-main {
+  height: 68px;
+  position: relative;
+  width: 344px;
+}
+
+.hot-post-in-main .location-image {
+  background-color: #c4c4c4;
+  border-radius: 4px;
+  height: 68px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 121px;
+}
+
+.hot-post-in-main .text-wrapper {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  left: 130px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.hot-post-in-main .location {
+  height: 14px;
+  left: 130px;
+  position: absolute;
+  top: 24px;
+  width: 42px;
+}
+
+.hot-post-in-main .location-2 {
+  height: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
+.hot-post-in-main .div {
+  color: #252525b2;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  height: 14px;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.hot-post-in-main .writer {
+  height: 19px;
+  left: 130px;
+  position: absolute;
+  top: 46px;
+  width: 61px;
+}
+
+.hot-post-in-main .text-wrapper-2 {
+  color: #a1a1a1;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  height: 14px;
+  left: 24px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+}
+
+.hot-post-in-main .image {
+  height: 19px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+.hot-post-in-main .post-like {
+  height: 16px;
+  left: 316px;
+  position: absolute;
+  top: 50px;
+  width: 30px;
+}
+
+.hot-post-in-main .text-wrapper-3 {
+  color: var(--steel-gray-540);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 16px;
+  left: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.hot-post-in-main .vector {
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 12px;
+}

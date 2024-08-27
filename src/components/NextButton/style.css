@@ -1,0 +1,27 @@
+.next-button {
+  all: unset;
+  align-items: center;
+  background-color: #0002ff;
+  border-radius: 16.83px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10.52px;
+  height: 63px;
+  justify-content: center;
+  padding: 17.88px 93.61px;
+  position: relative;
+  width: 318px;
+}
+
+.next-button .text-wrapper {
+  color: #ffffff;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}

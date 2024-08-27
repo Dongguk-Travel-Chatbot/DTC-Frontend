@@ -1,0 +1,1 @@
+export { HotPostInMain } from "./HotPostInMain";
