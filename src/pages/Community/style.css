@@ -1,0 +1,107 @@
+.community {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.community .free-community {
+  height: 92px;
+  left: 28px;
+  position: absolute;
+  top: 481px;
+  width: 319px;
+}
+
+.community .card {
+  align-items: center;
+  background-color: var(--whitewhite);
+  border: 1px solid;
+  border-color: var(--grey-grey-94);
+  border-radius: 10px;
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  padding: 16px 20px 16px 16px;
+  position: relative;
+  width: 319px;
+}
+
+.community .button {
+  height: 60px;
+  position: relative;
+  width: 60px;
+}
+
+.community .menu {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  position: relative;
+}
+
+.community .text-wrapper {
+  align-self: stretch;
+  color: var(--blackblack);
+  font-family: var(--main-body-bold-font-family);
+  font-size: var(--main-body-bold-font-size);
+  font-style: var(--main-body-bold-font-style);
+  font-weight: var(--main-body-bold-font-weight);
+  letter-spacing: var(--main-body-bold-letter-spacing);
+  line-height: var(--main-body-bold-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.community .description {
+  align-self: stretch;
+  color: var(--greygrey);
+  font-family: "Manrope", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+}
+
+.community .icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.community .travel-community {
+  height: 92px;
+  left: 28px;
+  position: absolute;
+  top: 360px;
+  width: 319px;
+}
+
+.community .hot-community-button {
+  height: 92px;
+  left: 28px;
+  position: absolute;
+  top: 239px;
+  width: 319px;
+}
+
+.community .page-header-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.community .footer-instance {
+  background-color: transparent !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 727px !important;
+}
+
+.community .design-component-instance-node {
+  width: 0px !important;
+}
