@@ -1,4 +1,4 @@
-.travel-record {
+.travel-plan {
   align-items: center;
   background-color: #ffffff;
   border: 2px solid;
@@ -13,7 +13,7 @@
   width: 336px;
 }
 
-.travel-record .travel-image {
+.travel-plan .travel-image {
   align-self: stretch;
   background-image: url(https://c.animaapp.com/x2g7jTEH/img/image-80-1@2x.png);
   background-position: 50% 50%;
@@ -24,7 +24,7 @@
   margin-bottom: 3px;
 }
 
-.travel-record .div {
+.travel-plan .div {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-.travel-record .travel-title {
+.travel-plan .travel-title {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -48,7 +48,7 @@
   width: 100%;
 }
 
-.travel-record .p {
+.travel-plan .p {
   color: #252525;
   flex: 1;
   font-family: "Gmarket Sans TTF-Bold", Helvetica;
@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.travel-record .text-wrapper {
+.travel-plan .text-wrapper {
   color: #252525;
   font-family: "Gmarket Sans TTF-Bold", Helvetica;
   font-size: 2px;
@@ -68,12 +68,12 @@
   letter-spacing: 0;
 }
 
-.travel-record .span {
+.travel-plan .span {
   margin-top: 10px;
   font-size: 14px;
 }
 
-.travel-record .travel-content {
+.travel-plan .travel-content {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -83,7 +83,7 @@
   width: 100%;
 }
 
-.travel-record .wrap {
+.travel-plan .wrap {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@
   width: 211px;
 }
 
-.travel-record .location {
+.travel-plan .location {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -100,13 +100,13 @@
   position: relative;
 }
 
-.travel-record .img {
+.travel-plan .img {
   height: 14.33px;
   position: relative;
   width: 12.5px;
 }
 
-.travel-record .text-wrapper-2 {
+.travel-plan .text-wrapper-2 {
   color: #252525b2;
   font-family: "Gmarket Sans TTF-Light", Helvetica;
   font-size: 12px;
@@ -118,7 +118,7 @@
   width: 100px;
 }
 
-.travel-record .date {
+.travel-plan .date {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -126,13 +126,13 @@
   position: relative;
 }
 
-.travel-record .calendar {
+.travel-plan .calendar {
   height: 14.33px;
   position: relative;
   width: 13px;
 }
 
-.travel-record .element {
+.travel-plan .element {
   color: #252525b2;
   font-family: "Gmarket Sans TTF-Light", Helvetica;
   font-size: 12px;
@@ -145,7 +145,7 @@
   width: fit-content;
 }
 
-.travel-record .status {
+.travel-plan .status {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -154,7 +154,7 @@
   position: relative;
 }
 
-.travel-record .text-wrapper-3 {
+.travel-plan .text-wrapper-3 {
   color: #0066fffc;
   font-family: "Gmarket Sans TTF-Bold", Helvetica;
   font-size: 13px;
@@ -167,6 +167,6 @@
   width: fit-content;
 }
 
-.travel-record-instance {
+.travel-plan-instance {
   margin-bottom: 13px; /* 아래쪽에 20px 간격 추가 */
 }

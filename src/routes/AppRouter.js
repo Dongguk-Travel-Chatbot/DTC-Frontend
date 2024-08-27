@@ -7,6 +7,7 @@ import { Main } from "src/pages/Main";
 import { Community } from "src/pages/Community";
 import { Mypage } from "src/pages/Mypage";
 import { TravelRecordPage } from "src/pages/TravelRecord";
+import { TravelPlanPage } from "src/pages/TravelPlan";
 
 export const AppRouter = () => {
 
@@ -21,6 +22,7 @@ export const AppRouter = () => {
           <Route path='/community' element={<Community />} />
           <Route path='/mypage' element={<Mypage />} />
           <Route path='/travel-record' element={<TravelRecordPage />} />
+          <Route path='/travel-plan' element={<TravelPlanPage />} />
         </Routes>
       </BrowserRouter>
     );
