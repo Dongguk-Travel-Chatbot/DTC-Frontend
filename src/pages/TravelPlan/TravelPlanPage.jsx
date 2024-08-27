@@ -4,6 +4,7 @@ import { TravelPlan } from "../../components/TravelPlan";
 import "./style.css";
 import { instance } from "src/apis/axios";
 import {useNavigate} from 'react-router-dom'
+import { Footer } from "src/components/Footer";
 
 export const TravelPlanPage = () => {
   let [plans, setPlans] = useState([]);
@@ -27,6 +28,11 @@ export const TravelPlanPage = () => {
 
   return (
     <div className="travel-plan-screen">
+      <ReactIconsFi
+        className="more-info-icons"
+        reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
+      />
+
       {
         plans.map(function(plan, i) {
           return <TravelPlan className="travel-plan-instance" props={plan} key={i}/>
@@ -39,10 +45,8 @@ export const TravelPlanPage = () => {
           <div className="travel-plan-3" />
         </div>
       </div>
-      <ReactIconsFi
-        className="more-info-icons"
-        reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
-      />
+
+      <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
     </div>
   );
 };
