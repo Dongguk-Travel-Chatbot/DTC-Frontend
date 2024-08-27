@@ -70,3 +70,14 @@
   top: 91px !important;
   width: 24px !important;
 }
+
+.travel-plan-screen .footer-instance {
+  background-color: transparent !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 728px !important;
+}
+
+.travel-plan-screen .design-component-instance-node {
+  width: 376px !important;
+}
