@@ -11,6 +11,7 @@ import { TravelRecordPage } from "src/pages/TravelRecord";
 import { TravelPlanPage } from "src/pages/TravelPlan";
 import { TravelPost } from "src/pages/TravelPost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
+import { PostDetails } from "src/pages/TravelCommunityInfo";
 
 export const AppRouter = () => {
 
@@ -29,6 +30,7 @@ export const AppRouter = () => {
           <Route path='/travel-plan' element={<TravelPlanPage />} />
           <Route path='/travel-post' element={<TravelPost />} />
           <Route path='/freecommunity' element={<FreeCommunity />} />
+          <Route path="/post-details/:category/:id" element={<PostDetails />} />
         </Routes>
       </BrowserRouter>
     );

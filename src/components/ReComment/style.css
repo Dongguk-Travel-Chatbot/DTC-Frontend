@@ -1,0 +1,189 @@
+.re-comment {
+  height: 67px;
+  position: relative;
+  width: 292px;
+}
+
+.re-comment .re-comment-info {
+  height: 15px;
+  left: 40px;
+  position: absolute;
+  top: 52px;
+  width: 244px;
+}
+
+.re-comment .like-icon-2 {
+  height: 13px;
+  left: 212px;
+  position: absolute;
+  top: 1px;
+  width: 11px;
+}
+
+.re-comment .text-wrapper-11 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  height: 13px;
+  left: 227px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.re-comment .text-wrapper-12 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.re-comment .text-wrapper-13 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.re-comment .overlap-group-wrapper {
+  height: 15px;
+  left: 83px;
+  position: absolute;
+  top: 0;
+  width: 57px;
+}
+
+.re-comment .overlap-group-2 {
+  background-color: #ffffff;
+  height: 15px;
+  position: relative;
+  width: 55px;
+}
+
+.re-comment .text-wrapper-14 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.re-comment .re-comment-content {
+  height: 18px;
+  left: 40px;
+  position: absolute;
+  top: 28px;
+  width: 240px;
+}
+
+.re-comment .text-wrapper-15 {
+  color: var(--black);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17.7px;
+  position: absolute;
+  top: 0;
+  width: 238px;
+}
+
+.re-comment .re-comment-writer {
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.re-comment .re-comment-writer-2 {
+  height: 17px;
+  left: 40px;
+  position: absolute;
+  top: 6px;
+  width: 254px;
+}
+
+.re-comment .text-wrapper-16 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12.5px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.re-comment .re-edit-icons {
+  height: 13px;
+  left: 239px;
+  position: absolute;
+  top: 2px;
+  width: 13px;
+}
+
+.re-comment .re-modify-button {
+  height: 13px;
+  left: 118px;
+  position: absolute;
+  top: 2px;
+  width: 57px;
+}
+
+.re-comment .overlap-group-3 {
+  background-color: #ffffff;
+  height: 13px;
+  position: relative;
+  width: 55px;
+}
+
+.re-comment .text-wrapper-17 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 13px;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.re-comment .re-delete-button {
+  height: 13px;
+  left: 178px;
+  position: absolute;
+  top: 2px;
+  width: 57px;
+}
