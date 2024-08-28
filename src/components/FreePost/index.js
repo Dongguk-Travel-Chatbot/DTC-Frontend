@@ -1,0 +1,1 @@
+export { FreePost } from "./FreePost";
