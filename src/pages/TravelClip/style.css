@@ -1,0 +1,10 @@
+.travel-clip {
+  background-color: #ffffff;
+  height: 812px;
+  width: 375px;
+}
+
+.travel-clip .travel-component-instance {
+  left: 20px !important;
+  top: 112px !important;
+}
