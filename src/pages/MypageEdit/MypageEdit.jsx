@@ -7,7 +7,6 @@ import ProfileFox from "src/assets/ProfileFox.svg";
 import ProfileCat from "src/assets/ProfileCat.svg";
 import ProfileKoala from "src/assets/ProfileKoala.svg";
 import ProfileLion from "src/assets/ProfileLion.svg";
-import DTC from "src/assets/DTC.svg";
 import "./style.css";
 import { NextButton } from "src/components/NextButton";
 import { BigOutlineSelect } from "src/components/BigOutlineSelect";
@@ -17,6 +16,7 @@ import { PageHeader } from "src/components/PageHeader";
 
 export const MypageEdit = () => {
   const navigate = useNavigate();
+  let [user, setUser] = useState({});
 
   let headerOption = {
     pageTitle : "Edit Profile",
@@ -68,7 +68,7 @@ export const MypageEdit = () => {
     let genderValue = gender === "남자";
 
     // MBTI 변환 (리스트에서 인덱스를 integer로 변환)
-    let mbtiValue = mbtiList.indexOf(mbti) + 1;
+    let mbtiValue = mbtiList.indexOf(mbti);
 
     // 프로필 이미지 변환 (선택된 프로필 인덱스)
     let imageValue = selectProfile;
@@ -92,20 +92,48 @@ export const MypageEdit = () => {
       });
 
       if (response.status === 201) {
-        console.log("회원가입 성공:", response.data);
-        navigate("/main");
+        console.log("회원정보 수정 성공:", response.data);
+        navigate("/mypage");
       } else {
-        console.error("회원가입 실패:", response.status);
+        console.error("회원정보 수정 실패:", response.status);
       }
     } catch (error) {
       console.error("Error:", error);
     }
   };
 
+  useEffect(() => {
+    instance
+      .get("/api/mypage/edit-profile", {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      })
+      .then((response) => {
+        const data = response.data.data;
+        
+        // 서버에서 받은 데이터로 상태를 직접 설정
+        setUser(data); // user 상태 설정
+        setSelectProfile(data.image); // 프로필 설정
+        setName(data.name); // 이름 설정
+        setNickame(data.nickname); // 닉네임 설정
+        setAddress(data.address); // 주소 설정
+        setAge(`${data.age}대`); // 나이 설정
+        setMbti(mbtiList[data.mbti]); // MBTI 설정
+        setGender(data.gender ? "남자" : "여자"); // 성별 설정
+  
+        // 콘솔 로그를 통해 상태 값 확인 (디버깅용)
+        console.log(data);
+      })
+      .catch((error) => {
+        console.error("Error exchanging code:", error);
+      });
+  }, []);
+
   return (
-    <div className="sign-up">
+    <div className="my-page-edit">
       <PageHeader className="page-header-instance" props={headerOption}/>
-      <div className="label-2">프로필 선택</div>
+      <div className="label-3">프로필 선택</div>
       <div className="profile-select">
         <div className="profile-select-frame">
           <div className="div">
@@ -124,16 +152,19 @@ export const MypageEdit = () => {
       <BigOutline
         className="big-outline-instance-name"
         label={"이름"}
+        initialValue={user.name}
         setInputValue={setName}
       />
       <BigOutline
         className="big-outline-instance-nickname"
         label={"닉네임"}
+        initialValue={user.nickname}
         setInputValue={setNickame}
       />
       <BigOutline
         className="big-outline-instance-address"
         label={"상세주소"}
+        initialValue={user.address}
         setInputValue={setAddress}
       />
       <BigOutlineSelect

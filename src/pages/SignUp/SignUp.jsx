@@ -62,7 +62,7 @@ export const SignUp = () => {
     let genderValue = gender === "남자";
 
     // MBTI 변환 (리스트에서 인덱스를 integer로 변환)
-    let mbtiValue = mbtiList.indexOf(mbti) + 1;
+    let mbtiValue = mbtiList.indexOf(mbti);
 
     // 프로필 이미지 변환 (선택된 프로필 인덱스)
     let imageValue = selectProfile;
