@@ -1,0 +1,71 @@
+.comment {
+  height: 230px;
+  position: relative;
+  width: 332px;
+}
+
+.comment .comment-mono-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.comment .re-post-comment {
+  height: 30px;
+  left: 40px;
+  position: absolute;
+  top: 119px;
+  width: 285px;
+}
+
+.comment .post-comment-box {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: var(--steel-gray-80);
+  border-radius: 5px;
+  box-shadow: inset 0px -1px 0px #d3d9de;
+  height: 30px;
+  left: 40px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 219px;
+}
+
+.comment .text-wrapper-18 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 5px;
+  white-space: nowrap;
+  width: 202px;
+}
+
+.comment .post-comment-button {
+  height: 20px;
+  left: 267px;
+  position: absolute;
+  top: 5px;
+  width: 18px;
+}
+
+.comment .post-comment-writer {
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.comment .re-comment-instance {
+  left: 40px !important;
+  position: absolute !important;
+  top: 163px !important;
+}

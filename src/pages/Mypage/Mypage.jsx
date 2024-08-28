@@ -40,6 +40,26 @@ export const Mypage = () => {
     5: ProfileKoala,
     6: ProfileLion,
   };
+
+  const mbtiList = [
+    "ENFJ",
+    "ENFP",
+    "ESFJ",
+    "ESFP",
+    "ENTJ",
+    "ENTP",
+    "ESTJ",
+    "ESTP",
+    "INFJ",
+    "INFP",
+    "ISFJ",
+    "ISFP",
+    "INTJ",
+    "INTP",
+    "ISTJ",
+    "ISTP",
+  ];
+  const profileMbti = mbtiList[user.mbti];
   const profileImage = profileImages[user.image];
 
   const profileGenders = {
@@ -57,7 +77,7 @@ export const Mypage = () => {
           src="https://c.animaapp.com/sccbCaCP/img/mypagerectangle@2x.png"
         />
         <img className="image" alt="User profile" src={profileImage} />
-        <div className="my-page-edit-icons">
+        <div className="my-page-edit-icons" onClick={() => navigate('/mypage-edit')}>
           <img
             className="my-page-edit"
             alt="Edit profile"
@@ -81,7 +101,7 @@ export const Mypage = () => {
         </div>
       </div>
       <div className="text-wrapper-3">{user.nickname}</div>
-      <p className="p">{user.age} / {profileGender} / {user.mbti}</p>
+      <p className="p">{user.age} / {profileGender} / {profileMbti}</p>
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
     </div>
   );

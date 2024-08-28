@@ -21,6 +21,7 @@ export const BigOutlineSelect = ({ className, label, optionList, selectedValue, 
 
   return (
     <div className={`big-outline-select ${className}`}>
+      <div className="label-2">{label}</div>
       <div className="value" onClick={toggleDropdown}>
         <div className="div">{selectedValue}</div>
         <img
@@ -29,7 +30,6 @@ export const BigOutlineSelect = ({ className, label, optionList, selectedValue, 
           src={ArrowDropDown}
         />
       </div>
-      <div className="label-2">{label}</div>
 
       {isOpen && (
         <div className="dropdown-options">

@@ -1,0 +1,189 @@
+.comment-mono {
+  height: 106px;
+  position: relative;
+  width: 332px;
+}
+
+.comment-mono .comment-content {
+  height: 54px;
+  left: 40px;
+  position: absolute;
+  top: 32px;
+  width: 280px;
+}
+
+.comment-mono .text-wrapper-4 {
+  color: var(--black);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17.7px;
+  position: absolute;
+  top: 0;
+  width: 278px;
+}
+
+.comment-mono .comment-writer-icons {
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.comment-mono .comment-info {
+  height: 15px;
+  left: 40px;
+  position: absolute;
+  top: 91px;
+  width: 284px;
+}
+
+.comment-mono .like-icon {
+  height: 13px;
+  left: 252px;
+  position: absolute;
+  top: 1px;
+  width: 11px;
+}
+
+.comment-mono .text-wrapper-5 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 10px;
+  font-weight: 300;
+  height: 13px;
+  left: 267px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.comment-mono .text-wrapper-6 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.comment-mono .text-wrapper-7 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 39px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.comment-mono .re-comment-button {
+  height: 15px;
+  left: 83px;
+  position: absolute;
+  top: 0;
+  width: 57px;
+}
+
+.comment-mono .overlap-group {
+  background-color: #ffffff;
+  height: 15px;
+  position: relative;
+  width: 55px;
+}
+
+.comment-mono .text-wrapper-8 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 15px;
+  left: 2px;
+  letter-spacing: 0;
+  line-height: 15px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.comment-mono .comment-writer {
+  height: 17px;
+  left: 40px;
+  position: absolute;
+  top: 6px;
+  width: 294px;
+}
+
+.comment-mono .text-wrapper-9 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12.5px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 0;
+  width: 80px;
+}
+
+.comment-mono .edit-icons {
+  height: 13px;
+  left: 279px;
+  position: absolute;
+  top: 2px;
+  width: 13px;
+}
+
+.comment-mono .modify-button {
+  height: 13px;
+  left: 158px;
+  position: absolute;
+  top: 2px;
+  width: 57px;
+}
+
+.comment-mono .div-wrapper {
+  background-color: #ffffff;
+  height: 13px;
+  position: relative;
+  width: 55px;
+}
+
+.comment-mono .text-wrapper-10 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 13px;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.comment-mono .delete-button {
+  height: 13px;
+  left: 218px;
+  position: absolute;
+  top: 2px;
+  width: 57px;
+}

@@ -1,0 +1,330 @@
+.post-details {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.post-details .post-content {
+  height: 51px;
+  left: 25px;
+  position: absolute;
+  top: 383px;
+  width: 327px;
+}
+
+.post-details .text-wrapper-19 {
+  color: var(--black);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 0;
+  width: 325px;
+}
+
+.post-details .post-title {
+  height: 17px;
+  left: 25px;
+  position: absolute;
+  top: 354px;
+  width: 327px;
+}
+
+.post-details .text-wrapper-20 {
+  color: var(--black);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 17px;
+  position: absolute;
+  top: 0;
+  width: 325px;
+}
+
+.post-details .post-info {
+  height: 40px;
+  left: 24px;
+  position: absolute;
+  top: 438px;
+  width: 333px;
+}
+
+.post-details .overlap-group-4 {
+  background-color: #ffffff;
+  height: 39px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 333px;
+}
+
+.post-details .post-scrap {
+  height: 22px;
+  left: 100px;
+  position: absolute;
+  top: 9px;
+  width: 45px;
+}
+
+.post-details .post-scrap-2 {
+  height: 22px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.post-details .element-2 {
+  color: var(--steel-gray-540);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+}
+
+.post-details .post-comment {
+  height: 24px;
+  left: 50px;
+  position: absolute;
+  top: 8px;
+  width: 48px;
+}
+
+.post-details .img-2 {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+.post-details .text-wrapper-21 {
+  color: var(--steel-gray-540);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 16px;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: 16px;
+  position: absolute;
+  top: 4px;
+  white-space: nowrap;
+}
+
+.post-details .post-like {
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+  width: 48px;
+}
+
+.post-details .post-line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 40px;
+  width: 333px;
+}
+
+.post-details .travel-record-instance {
+  left: 20px !important;
+  position: absolute !important;
+  top: 152px !important;
+}
+
+.post-details .comment-instance {
+  left: 24px !important;
+  position: absolute !important;
+  top: 489px !important;
+}
+
+.post-details .post-writer {
+  height: 50px;
+  left: 20px;
+  position: absolute;
+  top: 92px;
+  width: 338px;
+}
+
+.post-details .image {
+  height: 50px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+
+.post-details .text-wrapper-22 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 13px;
+  font-weight: 500;
+  height: 13px;
+  left: 52px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 9px;
+  white-space: nowrap;
+}
+
+.post-details .text-wrapper-23 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 14px;
+  left: 52px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.post-details .text-wrapper-24 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 14px;
+  left: 86px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 26px;
+  white-space: nowrap;
+}
+
+.post-details .edit-icons-2 {
+  height: 13px;
+  left: 319px;
+  position: absolute;
+  top: 9px;
+  width: 13px;
+}
+
+.post-details .modify-button-2 {
+  height: 13px;
+  left: 198px;
+  position: absolute;
+  top: 9px;
+  width: 57px;
+}
+
+.post-details .overlap-group-5 {
+  background-color: #ffffff;
+  height: 13px;
+  position: relative;
+  width: 55px;
+}
+
+.post-details .text-wrapper-25 {
+  color: var(--link);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12.5px;
+  font-weight: 300;
+  height: 13px;
+  left: 3px;
+  letter-spacing: 0;
+  line-height: 13px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.post-details .overlap-wrapper {
+  height: 13px;
+  left: 258px;
+  position: absolute;
+  top: 9px;
+  width: 57px;
+}
+
+.post-details .post-comment-frame {
+  background-color: #ffffff;
+  height: 66px;
+  left: 0;
+  position: absolute;
+  top: 746px;
+  width: 375px;
+}
+
+.post-details .post-comment-2 {
+  height: 30px;
+  left: 24px;
+  position: absolute;
+  top: 18px;
+  width: 325px;
+}
+
+.post-details .post-comment-box-2 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: var(--steel-gray-80);
+  border-radius: 5px;
+  box-shadow: inset 0px -1px 0px #d3d9de;
+  height: 30px;
+  left: 40px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  width: 259px;
+}
+
+.post-details .text-wrapper-26 {
+  color: var(--gray-400);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: 5px;
+  white-space: nowrap;
+  width: 241px;
+}
+
+.post-details .post-comment-button-2 {
+  height: 20px;
+  left: 307px;
+  position: absolute;
+  top: 5px;
+  width: 18px;
+}
+
+.post-details .post-comment-writer-2 {
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  height: 30px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 30px;
+}
+
+.post-details .post-line-2 {
+  height: 1px;
+  left: 21px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 333px;
+}
