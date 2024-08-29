@@ -46,7 +46,7 @@ export const TravelPost = () => {
           onChange={handleTitleChange}
         />
         <textarea
-          className="text-wrapper"
+          className="content-wrapper"
           placeholder="내용을 입력하세요."
           value={content}
           onChange={handleContentChange}
@@ -64,7 +64,7 @@ export const TravelPost = () => {
       </div>
       <div className="clip-travel">
         <button onClick={handleClipClick}>
-          <img className="img" alt="Clip travel" src="https://c.animaapp.com/q591QOCC/img/cliptravel@2x.png" />
+          <img className="image" alt="Clip travel" src="https://c.animaapp.com/q591QOCC/img/cliptravel@2x.png" />
         </button>
       </div>
     </div>
