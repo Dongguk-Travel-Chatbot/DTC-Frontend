@@ -1,0 +1,15 @@
+.chat-user {
+  background-color: #ffffff;
+  border-color: var(--g-grey-inactive);
+}
+
+.chat-user .chat-bubble {
+  background-color: #cce5ff;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 20px 20px 0px 20px;
+  height: 122px;
+  left: 36px;
+  top: 0;
+  width: 196px;
+}
