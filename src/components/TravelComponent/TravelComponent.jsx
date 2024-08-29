@@ -6,11 +6,12 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import React from "react";
 import "./style.css";
 
-export const TravelComponent = ({ className }) => {
+export const TravelComponent = ({ className, props }) => {
+
   return (
     <div className={`travel-component ${className}`}>
       <div className="travel-title">
-        <div className="text-wrapper">여행 제목</div>
+        <div className="text-wrapper">{props.title}</div>
       </div>
       <div className="travel-content">
         <div className="content">
@@ -28,7 +29,7 @@ export const TravelComponent = ({ className }) => {
                   src="https://c.animaapp.com/WAIsCMBj/img/vector--stroke--10@2x.png"
                 />
               </div>
-              <div className="text-wrapper-2">장소</div>
+              <div className="text-wrapper-2">{props.place}</div>
             </div>
           </div>
           <div className="calender">
@@ -70,7 +71,7 @@ export const TravelComponent = ({ className }) => {
                   src="https://c.animaapp.com/WAIsCMBj/img/vector--stroke--17@2x.png"
                 />
               </div>
-              <div className="text-wrapper-2">2024.6.14~2023.6.15</div>
+              <div className="text-wrapper-2">{props.depart_at}~{props.arrive_at}</div>
             </div>
           </div>
         </div>

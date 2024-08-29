@@ -2,9 +2,32 @@
   background-color: #ffffff;
   height: 812px;
   width: 375px;
+  display: flex; /* Flexbox 사용 */
+  flex-direction: column; /* 세로 방향 정렬 */
+  align-items: center; /* 가운데 정렬 */
+  justify-content: flex-start; /* 위쪽 정렬 */
+}
+
+.travel-clip .travel-title {
+  bottom: 3px;
 }
 
 .travel-clip .travel-component-instance {
   left: 20px !important;
   top: 112px !important;
+  padding: 10px;
+  border: 2px solid transparent; /* 기본 상태에서 2px 두께의 투명한 테두리 */
+  transition: border-color 0.3s ease; /* 테두리 전환 애니메이션 */
+  margin-bottom: 15px; /* 컴포넌트 간의 간격 추가 */
+}
+
+.travel-clip .travel-component-wrapper{
+  padding: 10px;
+}
+
+.travel-clip .click-record {
+  border-color: #6eb9ff; /* 부드러운 블루 계열 색상 */
+  box-shadow: 0 4px 12px rgba(60, 63, 67, 0.3); /* 부드러운 그림자 효과 */
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+  border: 5px solid #6eb9ff; /* 클릭 시 2px 두께의 블루 테두리 추가 */
 }
