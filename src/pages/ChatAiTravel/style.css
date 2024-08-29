@@ -1,0 +1,101 @@
+.chat-AI-travel {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.chat-AI-travel .overlap {
+  background-color: #ffffff;
+  height: 660px;
+  left: 0;
+  position: absolute;
+  top: 91px;
+  width: 375px;
+  overflow: auto;
+}
+
+.chat-AI-travel .text-wrapper {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 26px;
+  font-weight: 700;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 346px;
+  white-space: nowrap;
+  width: 331px;
+}
+
+.chat-AI-travel .image {
+  height: 318px;
+  left: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 19px;
+  width: 346px;
+}
+
+.chat-AI-travel .chat-input-box {
+  background-color: #ffffff;
+  height: 61px;
+  left: 0;
+  position: absolute;
+  top: 751px;
+  width: 375px;
+}
+
+.chat-AI-travel .chat-group {
+  height: 45px;
+  left: 21px;
+  position: absolute;
+  top: 8px;
+  width: 304px;
+}
+
+.chat-AI-travel .overlap-group {
+  border: 1px solid;
+  border-color: #c4c4c4;
+  border-radius: 50px;
+  height: 45px;
+  position: relative;
+  width: 302px;
+}
+
+.chat-AI-travel .div {
+  color: #c4c4c4;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  height: 45px;
+  left: 22px;
+  letter-spacing: -0.33px;
+  line-height: normal;
+  position: absolute;
+  top: -1px;
+  width: 173px;
+}
+
+.chat-AI-travel .vector {
+  height: 24px;
+  left: 331px;
+  position: absolute;
+  top: 18px;
+  width: 24px;
+}
+
+.chat-AI-travel .chat-AI-instance {
+  left: 15px !important;
+  position: absolute !important;
+  top: 486px !important;
+}
+
+.chat-AI-travel .chat-user-instance {
+  left: 165px !important;
+  position: absolute !important;
+  top: 678px !important;
+}
+

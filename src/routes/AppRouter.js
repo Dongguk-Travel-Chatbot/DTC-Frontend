@@ -13,6 +13,7 @@ import { TravelPost } from "src/pages/TravelPost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
 import { PostDetails } from "src/pages/TravelCommunityInfo";
 import { TravelClip } from "src/pages/TravelClip";
+import { ChatAiTravel } from "src/pages/ChatAiTravel";
 
 export const AppRouter = () => {
 
@@ -33,6 +34,7 @@ export const AppRouter = () => {
           <Route path='/TravelClip' element={<TravelClip />} />
           <Route path='/freecommunity' element={<FreeCommunity />} />
           <Route path="/post-details/:category/:id" element={<PostDetails />} />
+          <Route path="/100" element={<ChatAiTravel />} />
         </Routes>
       </BrowserRouter>
     );

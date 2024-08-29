@@ -1,0 +1,25 @@
+.chat-AI {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.chat-AI .chat-bubble {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 20px 20px 20px 0px;
+  height: 173px;
+  left: 36px;
+  position: absolute;
+  top: 0;
+  width: 310px;
+}
+
+.chat-AI .DTC-image {
+  height: 30px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 143px;
+  width: 30px;
+}
