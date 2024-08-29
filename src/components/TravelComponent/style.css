@@ -13,6 +13,7 @@
 }
 
 .travel-component .travel-title {
+  bottom: 8px;
   align-items: center;
   display: flex;
   gap: 4px;

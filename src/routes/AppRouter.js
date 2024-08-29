@@ -12,6 +12,7 @@ import { TravelPlanPage } from "src/pages/TravelPlan";
 import { TravelPost } from "src/pages/TravelPost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
 import { PostDetails } from "src/pages/TravelCommunityInfo";
+import { TravelClip } from "src/pages/TravelClip";
 
 export const AppRouter = () => {
 
@@ -29,6 +30,7 @@ export const AppRouter = () => {
           <Route path='/travel-record' element={<TravelRecordPage />} />
           <Route path='/travel-plan' element={<TravelPlanPage />} />
           <Route path='/travel-post' element={<TravelPost />} />
+          <Route path='/TravelClip' element={<TravelClip />} />
           <Route path='/freecommunity' element={<FreeCommunity />} />
           <Route path="/post-details/:category/:id" element={<PostDetails />} />
         </Routes>
