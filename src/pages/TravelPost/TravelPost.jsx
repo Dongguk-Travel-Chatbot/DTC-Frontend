@@ -20,25 +20,28 @@ export const TravelPost = () => {
   const [title, setTitle] = useState(localStorage.getItem('postTitle') || "");
   const [content, setContent] = useState(localStorage.getItem('postContent') || "");
   const [record, setRecord] = useState(null);
+  const [posts, setPosts] = useState([]); // 글 목록 상태
 
   useEffect(() => {
-    // 강제로 record를 설정하여 테스트
-    const testRecord = {
-      travel_record_id: 1,  // 가상의 ID
-      title: "Test Title",
-      place: "Test Place",
-      depart_at: "2023-01-01",
-      arrive_at: "2023-01-10",
-      image_url: "https://example.com/test.jpg"
-    };
-
     if (location.state?.selectedRecord) {
       console.log("Record found in location.state:", location.state.selectedRecord);
       setRecord(location.state.selectedRecord);
     } else {
-      console.log("No record found in location.state. Using test record.");
-      setRecord(testRecord);  // 강제로 설정
+      console.log("No record found in location.state.");
     }
+
+    // 기존 글 목록을 불러오기
+    const fetchPosts = async () => {
+      try {
+        const response = await instance.get("/api/community/posts?sort=post_time,desc");
+        console.log("Fetched posts:", response.data.posts);
+        setPosts(response.data.posts);
+      } catch (error) {
+        console.error("기존 글 목록 불러오기 실패:", error);
+      }
+    };
+
+    fetchPosts();
   }, [location.state]);
 
   useEffect(() => {
@@ -54,44 +57,51 @@ export const TravelPost = () => {
   };
 
   const handleWritePost = async () => {
+    // 제목이나 내용이 비어 있는지 확인
+    if (!title.trim() || !content.trim()) {
+      alert("제목과 내용을 모두 입력해주세요.");
+      return; // 제목이나 내용이 비어 있으면 요청을 보내지 않음
+    }
+
+    // travel_record_id가 있는지 확인
+    if (!record || !record.travel_record_id) {
+      alert("여행 기록을 선택해주세요.");
+      return; // travel_record_id가 없으면 요청을 보내지 않음
+    }
+
     console.log("Attempting to send POST request...");
-    console.log(record);
-    console.log(record.travel_record_id);
+    console.log("Record being sent:", record);
 
-    if (record && record.travel_record_id) {  // record와 travel_record_id가 존재할 때만 요청을 보냅니다
-      console.log("Record exists, sending POST request with the following data:");
-      console.log("Title:", title);
-      console.log("Content:", content);
-      console.log("Travel Record ID:", record.travel_record_id);  // travel_record_id 출력
-
-      try {
-        const response = await instance.post(
-          "/api/community",
-          {
-            title: title,
-            content: content,
-            travel_id: record.travel_record_id,  // travel_record_id 사용
+    try {
+      const response = await instance.post(
+        "/api/community",
+        {
+          title: title,
+          content: content,
+          travel_id: record.travel_record_id,  // travel_record_id 사용
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
-          {
-            headers: {
-              Authorization: `Bearer ${localStorage.getItem("token")}`,
-            },
-          }
-        );
+        }
+      );
 
-        console.log("POST request successful:", response);
+      console.log("POST request successful, received response:", response.data);
 
-        // 요청이 성공한 후 상태를 초기화하고 페이지를 이동
-        localStorage.removeItem('postTitle');
-        localStorage.removeItem('postContent');
-        setTitle("");
-        setContent("");
-        navigate("/travelcommunity", { state: { newPost: response.data.success } });
-      } catch (error) {
-        console.error("글쓰기 요청 실패:", error);
-      }
-    } else {
-      console.log("글쓰기 요청을 보낼 수 없습니다. record가 없습니다.");
+      // 백엔드에서 반환된 새 글 정보를 사용해 posts 배열을 업데이트
+      setPosts([response.data.post, ...posts]);
+
+      console.log("Updated posts list after adding new post:", [response.data.post, ...posts]);
+
+      // 요청이 성공한 후 상태를 초기화하고 페이지를 이동
+      localStorage.removeItem('postTitle');
+      localStorage.removeItem('postContent');
+      setTitle("");
+      setContent("");
+      navigate("/travelcommunity", { state: { newPost: response.data.success } });
+    } catch (error) {
+      console.error("글쓰기 요청 실패:", error);
     }
   };
 
@@ -129,6 +139,16 @@ export const TravelPost = () => {
         <button onClick={handleClipClick}>
           <img className="image" alt="Clip travel" src="https://c.animaapp.com/q591QOCC/img/cliptravel@2x.png" />
         </button>
+      </div>
+
+      {/* 게시글 목록을 표시하는 부분 */}
+      <div className="post-list">
+        {posts.map((post, index) => (
+          <div key={index} className="post-item">
+            <h3>{post.title}</h3>
+            <p>{post.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );

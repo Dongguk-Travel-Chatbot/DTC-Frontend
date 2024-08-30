@@ -1,4 +1,4 @@
-.free-community {
+.hot-community {
   background-color: #ffffff;
   height: 812px;
   overflow: hidden;
@@ -6,33 +6,33 @@
   width: 375px;
 }
 
-.free-community .post-instance {
+.hot-community .post-instance {
   left: 0 !important;
   top: 93px !important;
 }
 
-.free-community .page-header-instance {
+.hot-community .page-header-instance {
   left: 0 !important;
   position: absolute !important;
   top: 1px !important;
 }
 
-.free-community .footer-instance {
+.hot-community .footer-instance {
   background-color: transparent !important;
   left: 0 !important;
   position: absolute !important;
   top: 728px !important;
 }
 
-.free-community .design-component-instance-node {
+.hot-community .design-component-instance-node {
   width: 376px !important;
 }
 
-.free-community .post-scrap {
+.hot-community .post-scrap {
   display: none;
 }
 
-.free-community .text-wrapper {
+.hot-community .text-wrapper {
   position: relative;
   left: 84px; /* 원하는 만큼 왼쪽으로 이동 */
   top: 37px; /* 원하는 만큼 아래로 이동 */
