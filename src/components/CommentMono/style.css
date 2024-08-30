@@ -1,15 +1,21 @@
 .comment-mono {
-  height: 106px;
   position: relative;
-  width: 332px;
+  margin-bottom: 200px;
+}
+
+.comment-mono .commment-total{
+  margin-bottom: 0px;
+  width: auto;
+  height: auto;
 }
 
 .comment-mono .comment-content {
-  height: 54px;
+  height: 30px;
   left: 40px;
   position: absolute;
   top: 32px;
   width: 280px;
+  word-wrap: break-word;
 }
 
 .comment-mono .text-wrapper-4 {
@@ -38,7 +44,7 @@
 .comment-mono .comment-info {
   height: 15px;
   left: 40px;
-  position: absolute;
+  position: relative;
   top: 91px;
   width: 284px;
 }

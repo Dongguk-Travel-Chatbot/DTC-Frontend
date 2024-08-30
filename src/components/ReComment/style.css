@@ -1,13 +1,18 @@
 .re-comment {
   height: 67px;
-  position: relative;
   width: 292px;
+  position: relative;
+}
+.re-comment .re-comment-instance {
+  left: 0 !important;
+  position: relative !important;
+  top: 0 !important;
 }
 
 .re-comment .re-comment-info {
   height: 15px;
   left: 40px;
-  position: absolute;
+  position: relative;
   top: 52px;
   width: 244px;
 }

@@ -5,11 +5,21 @@
   width: 375px;
 }
 
+.post-details .overlap {
+  background-color: #ffffff;
+  height: 655px;
+  left: 0;
+  position: absolute;
+  top: 91px;
+  width: 375px;
+  overflow: auto;
+}
+
 .post-details .post-content {
   height: 51px;
   left: 25px;
   position: absolute;
-  top: 383px;
+  top: 293px;
   width: 327px;
 }
 
@@ -30,7 +40,7 @@
   height: 17px;
   left: 25px;
   position: absolute;
-  top: 354px;
+  top: 264px;
   width: 327px;
 }
 
@@ -51,7 +61,7 @@
   height: 40px;
   left: 24px;
   position: absolute;
-  top: 438px;
+  top: 348px;
   width: 333px;
 }
 
@@ -144,30 +154,30 @@
 .post-details .travel-record-instance {
   left: 20px !important;
   position: absolute !important;
-  top: 152px !important;
+  top: 61px !important;
 }
 
 .post-details .comment-instance {
-  left: 24px !important;
-  position: absolute !important;
-  top: 489px !important;
+  left: 24px;
+  position: relative;
+  top: 399px;
 }
 
 .post-details .post-writer {
   height: 50px;
   left: 20px;
   position: absolute;
-  top: 92px;
+  top: 1px;
   width: 338px;
 }
 
 .post-details .image {
-  height: 50px;
-  left: 0;
+  height: 40px;
+  left: 5px;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  width: 50px;
+  top: 5px;
+  width: 40px;
 }
 
 .post-details .text-wrapper-22 {
@@ -187,7 +197,7 @@
 .post-details .text-wrapper-23 {
   color: var(--gray-400);
   font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-size: 12.5px;
+  font-size: 10px;
   font-weight: 300;
   height: 14px;
   left: 52px;
@@ -201,7 +211,7 @@
 .post-details .text-wrapper-24 {
   color: var(--gray-400);
   font-family: "Gmarket Sans TTF-Light", Helvetica;
-  font-size: 12.5px;
+  font-size: 10px;
   font-weight: 300;
   height: 14px;
   left: 86px;
@@ -261,8 +271,8 @@
   background-color: #ffffff;
   height: 66px;
   left: 0;
-  position: absolute;
-  top: 746px;
+  position: fixed;
+  bottom: 0px;
   width: 375px;
 }
 
