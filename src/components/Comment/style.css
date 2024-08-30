@@ -1,12 +1,12 @@
 .comment {
-  height: 230px;
   position: relative;
   width: 332px;
+  height: 230px;
 }
 
 .comment .comment-mono-instance {
   left: 0 !important;
-  position: absolute !important;
+  position: relative !important;
   top: 0 !important;
 }
 
@@ -66,6 +66,6 @@
 
 .comment .re-comment-instance {
   left: 40px !important;
-  position: absolute !important;
+  position: relative !important;
   top: 163px !important;
 }

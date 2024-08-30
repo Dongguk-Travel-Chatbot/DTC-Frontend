@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { BigOutline } from "../../components/BigOutline";
-import ProfileDog from "src/assets/ProfileDog.svg";
-import ProfileRabbit from "src/assets/ProfileRabbit.svg";
-import ProfileBear from "src/assets/ProfileBear.svg";
-import ProfileFox from "src/assets/ProfileFox.svg";
-import ProfileCat from "src/assets/ProfileCat.svg";
-import ProfileKoala from "src/assets/ProfileKoala.svg";
-import ProfileLion from "src/assets/ProfileLion.svg";
+
+import ProfileDogCircle from "src/assets/ProfileDogCircle.svg";
+import ProfileRabbitCircle from "src/assets/ProfileRabbitCircle.svg";
+import ProfileBearCircle from "src/assets/ProfileBearCircle.svg";
+import ProfileFoxCircle from "src/assets/ProfileFoxCircle.svg";
+import ProfileCatCircle from "src/assets/ProfileCatCircle.svg";
+import ProfileKoalaCircle from "src/assets/ProfileKoalaCircle.svg";
+import ProfileLionCircle from "src/assets/ProfileLionCircle.svg";
+
 import "./style.css";
 import { NextButton } from "src/components/NextButton";
 import { BigOutlineSelect } from "src/components/BigOutlineSelect";
@@ -24,13 +26,13 @@ export const MypageEdit = () => {
   }
 
   const profile = [
-    ProfileDog,
-    ProfileRabbit,
-    ProfileBear,
-    ProfileFox,
-    ProfileCat,
-    ProfileKoala,
-    ProfileLion,
+    ProfileDogCircle,
+    ProfileRabbitCircle,
+    ProfileBearCircle,
+    ProfileFoxCircle,
+    ProfileCatCircle,
+    ProfileKoalaCircle,
+    ProfileLionCircle,
   ];
 
   const [selectProfile, setSelectProfile] = useState(-1);

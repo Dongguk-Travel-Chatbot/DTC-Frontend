@@ -6,11 +6,34 @@ import { useParams } from "react-router-dom";
 import { instance } from "src/apis/axios";
 import { PageHeader } from "src/components/PageHeader";
 
+import ProfileDogCircle from "src/assets/ProfileDogCircle.svg";
+import ProfileRabbitCircle from "src/assets/ProfileRabbitCircle.svg";
+import ProfileBearCircle from "src/assets/ProfileBearCircle.svg";
+import ProfileFoxCircle from "src/assets/ProfileFoxCircle.svg";
+import ProfileCatCircle from "src/assets/ProfileCatCircle.svg";
+import ProfileKoalaCircle from "src/assets/ProfileKoalaCircle.svg";
+import ProfileLionCircle from "src/assets/ProfileLionCircle.svg";
+
 export const PostDetails = () => {
   const { category, id } = useParams();
-  const [ travel, setTravel ] = useState({});
-  
-  // category 값에 따라 게시판 이름 설정과 headerOption 생성
+  const [travel, setTravel] = useState({});
+  const [user, setUser] = useState({});
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [data, setData] = useState({});
+  const [comments, setComments] = useState([]); // 빈 배열로 초기화
+  const [loading, setLoading] = useState(true); // 로딩 상태 추가
+
+  const profiles = [
+    ProfileDogCircle,
+    ProfileRabbitCircle,
+    ProfileBearCircle,
+    ProfileFoxCircle,
+    ProfileCatCircle,
+    ProfileKoalaCircle,
+    ProfileLionCircle,
+  ];
+
   const headerOption = {
     pageTitle: (() => {
       switch (category) {
@@ -23,93 +46,113 @@ export const PostDetails = () => {
         default:
           return "기타 게시판";
       }
-    })(), // 즉시 실행 함수로 pageTitle을 동적으로 설정
+    })(),
     backIcon: true,
-    writeIcon: false
+    writeIcon: false,
+  };
+
+  const changeLocalDateTime = (localDateTime) => {
+    if (!localDateTime) {
+      return { date: "N/A", time: "N/A" };
+    }
+
+    const month = localDateTime.substring(5, 7);
+    const day = localDateTime.substring(8, 10);
+    const formattedDate = `${month}/${day}`;
+    const formattedTime = localDateTime.substring(11, 16);
+    return { date: formattedDate, time: formattedTime };
   };
 
   useEffect(() => {
     instance
       .get(`/api/community/${id}`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`,
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       })
       .then((response) => {
         const data = response.data.data;
-        console.log(data);
-        setTravel(response.data.data.travel)
+        const { date, time } = changeLocalDateTime(data.postTime);
+
+        setTravel(data.travel);
+        setUser(data.user);
+        setData(data);
+        setDate(date);
+        setTime(time);
+        setComments(data.comments || []);
+        setLoading(false); // 데이터 로드가 완료되면 로딩 상태를 false로 변경
       })
       .catch((error) => {
-        console.error("Error exchanging code:", error);
+        console.error("Error fetching post details:", error);
+        setLoading(false); // 에러가 발생해도 로딩 상태를 false로 변경
       });
-  }, []);
+  }, [id]);
+
+  if (loading) {
+    return <div></div>; // 로딩 중일 때 보여줄 화면
+  }
 
   return (
     <div className="post-details">
-      <PageHeader className="page-header-instance" props={headerOption}/>
-
-      <div className="post-writer">
-        <img className="image" alt="Image" src="https://c.animaapp.com/CeWmk5Rx/img/image-98@2x.png" />
-        <div className="text-wrapper-22">바니바니</div>
-        <div className="text-wrapper-23">8/19</div>
-        <div className="text-wrapper-24">20:00</div>
-        <img className="edit-icons-2" alt="Edit icons" src="https://c.animaapp.com/CeWmk5Rx/img/editicons-3@2x.png" />
-        <div className="modify-button-2">
-          <div className="overlap-group-5">
-            <div className="text-wrapper-25">수정하기</div>
-          </div>
-        </div>
-        <div className="overlap-wrapper">
-          <div className="overlap-group-5">
-            <div className="text-wrapper-25">삭제하기</div>
-          </div>
-        </div>
-      </div>
-
-      <TravelRecord className="travel-record-instance" props={travel}/>
-
-      <div className="post-title">
-        <div className="text-wrapper-20">본문 제목</div>
-      </div>
-
-      <div className="post-content">
-        <div className="text-wrapper-19">
-          본문
-          <br />
-          글적기 중!
-          <br />
-          주절주절
-        </div>
-      </div>
+      <PageHeader className="page-header-instance" props={headerOption} />
       
-      <div className="post-info">
-        <div className="overlap-group-4">
-          <div className="post-like">
-            <img className="img-2" alt="Post like" src="https://c.animaapp.com/CeWmk5Rx/img/postlike@2x.png" />
-            <div className="text-wrapper-21">21</div>
+      <div className="overlap">
+        <div className="post-writer">
+          <img className="image" alt="Image" src={profiles[user.image]} />
+          <div className="text-wrapper-22">{user.nickname || "익명"}</div>
+          <div className="text-wrapper-23">{date}</div>
+          <div className="text-wrapper-24">{time}</div>
+          <img className="edit-icons-2" alt="Edit icons" src="https://c.animaapp.com/CeWmk5Rx/img/editicons-3@2x.png" />
+          <div className="modify-button-2">
+            <div className="overlap-group-5">
+              <div className="text-wrapper-25">수정하기</div>
+            </div>
           </div>
-          
-          <div className="post-comment">
-            <img className="img-2" alt="Post comment" src="https://c.animaapp.com/CeWmk5Rx/img/postcomment@2x.png" />
-            <div className="text-wrapper-21">31</div>
-          </div>
-          
-          <div className="post-scrap">
-            <img className="post-scrap-2" alt="Post scrap" src="https://c.animaapp.com/CeWmk5Rx/img/postscrap@2x.png" />
-            <div className="element-2">11</div>
+          <div className="overlap-wrapper">
+            <div className="overlap-group-5">
+              <div className="text-wrapper-25">삭제하기</div>
+            </div>
           </div>
         </div>
-        <img className="post-line" alt="Post line" src="https://c.animaapp.com/CeWmk5Rx/img/postlile-1@2x.png" />
+
+        <TravelRecord className="travel-record-instance" props={travel} />
+
+        <div className="post-title">
+          <div className="text-wrapper-20">{data.title}</div>
+        </div>
+
+        <div className="post-content">
+          <div className="text-wrapper-19">{data.content}</div>
+        </div>
+
+        <div className="post-info">
+          <div className="overlap-group-4">
+            <div className="post-like">
+              <img className="img-2" alt="Post like" src="https://c.animaapp.com/CeWmk5Rx/img/postlike@2x.png" />
+              <div className="text-wrapper-21">{data.like || 0}</div>
+            </div>
+
+            <div className="post-comment">
+              <img className="img-2" alt="Post comment" src="https://c.animaapp.com/CeWmk5Rx/img/postcomment@2x.png" />
+              <div className="text-wrapper-21">{data.comment || 0}</div>
+            </div>
+
+            <div className="post-scrap">
+              <img className="post-scrap-2" alt="Post scrap" src="https://c.animaapp.com/CeWmk5Rx/img/postscrap@2x.png" />
+              <div className="element-2">{data.scrap}</div>
+            </div>
+          </div>
+          <img className="post-line" alt="Post line" src="https://c.animaapp.com/CeWmk5Rx/img/postlile-1@2x.png" />
+        </div>
+
+        <Comment className="comment-instance" props={data} />
       </div>
 
-      
-      <Comment className="comment-instance" />
-      
       <div className="post-comment-frame">
         <img className="post-line-2" alt="Post line" src="https://c.animaapp.com/CeWmk5Rx/img/postlile-1@2x.png" />
         <div className="post-comment-2">
           <div className="post-comment-writer-2" />
+          <img className="post-comment-writer-2" src={profiles[0]} /> {/*수정해야할 부분*/}
           <div className="post-comment-box-2">
             <div className="text-wrapper-26">입력하세요.</div>
           </div>
@@ -120,7 +163,6 @@ export const PostDetails = () => {
           />
         </div>
       </div>
-      
     </div>
   );
 };
