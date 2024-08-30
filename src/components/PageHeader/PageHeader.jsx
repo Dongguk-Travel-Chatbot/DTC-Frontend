@@ -2,8 +2,15 @@ import React from "react";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
 
-export const PageHeader = ({ className, props }) => {
+export const PageHeader = ({ className, props, onWriteIconClick }) => {
   const navigate = useNavigate();
+
+  const handleWriteClick = () => {
+    if (onWriteIconClick) {
+      onWriteIconClick();
+    }
+    navigate(props.writeUrl);
+  };
 
   return (
     <div className={`page-header ${className}`}>
@@ -24,7 +31,7 @@ export const PageHeader = ({ className, props }) => {
           className="write-post-button"
           alt="Write post button"
           src="https://c.animaapp.com/GmpRJdJZ/img/writepostbutton-1@2x.png"
-          onClick={()=>{navigate(props.writeUrl)}}
+          onClick={handleWriteClick}  // Write 클릭 시 handleWriteClick 호출
         />
       ) : null}
     </div>
