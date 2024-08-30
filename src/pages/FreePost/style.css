@@ -1,0 +1,116 @@
+.free-post {
+  background-color: #ffffff;
+  height: 812px;
+  overflow: hidden;
+  position: relative;
+  width: 375px;
+}
+
+.free-post .post-write {
+  height: 161px;
+  left: 21px;
+  position: absolute;
+  top: 103px;
+  width: 337px;
+}
+
+.free-post .menu {
+  color: #4a6375;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  left: 7px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 323px;
+  border: none;
+}
+
+.free-post .content-wrapper {
+  color: var(--greygrey);
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  left: 6px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 50px;
+  width: 320px;
+  height: 400px;
+  border: none; 
+}
+
+.free-post .line {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 32px;
+  width: 333px;
+}
+
+.free-post .clip-travel {
+  background-color: #ffffff;
+  height: 84px;
+  left: 0;
+  position: absolute;
+  top: 728px;
+  width: 375px;
+}
+
+.free-post .image {
+  height: 20px;
+  left: 23px;
+  position: absolute;
+  top: 32px;
+  width: 20px;
+}
+
+.free-post .post-write .menu, 
+.free-post .post-write .content-wrapper {
+  outline: none; /* 클릭 시 테두리 제거 */
+  border: none; /* 기본 테두리 제거 */
+  /* 추가적인 스타일을 원하시면 여기에 작성하세요 */
+}
+
+.free-post .attached-travel-component {
+  background-color: #ffffff; /* 배경색 설정 */
+  height: 84px; /* 높이 설정 */
+  width: 375px; /* 너비 설정 */
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 84px; /* 페이지 하단으로부터의 거리 설정, clip-travel의 높이와 여유를 고려 */
+  left: 0; /* 페이지 좌측에 맞춤 */
+  display: flex; /* Flexbox 사용 */
+  
+  align-items: flex-end; /* 수직 하단 정렬 */
+}
+
+.free-post .rendered-travel-component {
+  position: absolute; /* 화면에 고정 */
+  bottom: 20px;       /* 화면의 하단에 위치 */
+  left: 20px;         /* 좌측에 위치 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* 상단에 그림자 추가 (선택 사항) */
+  display: flex;
+  gap: 4px;
+  padding: 0px 17px;
+  position: relative;
+}
+
+.free-post .rendered-travel-component .travel-content{
+  bottom: 5px;
+}
+
+.free-post .clip-travel button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.free-post .clip-travel button .image {
+  display: block;
+}
