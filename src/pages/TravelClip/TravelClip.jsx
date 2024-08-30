@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TravelComponent } from "../../components/TravelComponent";
 import { PageHeader } from "../../components/PageHeader";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { instance } from "src/apis/axios";
 import "./style.css";
 
@@ -23,7 +23,9 @@ export const TravelClip = () => {
         },
       })
       .then((response) => {
-        setTravelComponent(response.data.data.records);
+        const data = response.data.data.records;
+        setTravelComponent(data);
+        console.log(travelComponent);
       })
       .catch((error) => {
         console.error("Error exchanging code:", error);
@@ -37,6 +39,7 @@ export const TravelClip = () => {
   const handleDoubleClick = (record, e) => {
     e.stopPropagation();
     // 선택한 기록을 상태로 전달
+    console.log(record)
     navigate("/travel-post", { state: { selectedRecord: record } });
   };
 

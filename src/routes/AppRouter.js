@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LoginPage } from "../pages/Login/LoginPage";
 import { Redirection } from "../pages/Redirection/Redirection";
 import { SignUp } from "../pages/SignUp";
-import { TravelCommunty } from "src/pages/TravelCommunty";
+import { TravelCommunity } from "src/pages/TravelCommunity";
 import { Main } from "src/pages/Main";
 import { Community } from "src/pages/Community";
 import { Mypage } from "src/pages/Mypage";
@@ -10,6 +10,7 @@ import { MypageEdit } from "src/pages/MypageEdit";
 import { TravelRecordPage } from "src/pages/TravelRecord";
 import { TravelPlanPage } from "src/pages/TravelPlan";
 import { TravelPost } from "src/pages/TravelPost";
+import { FreePost } from "src/pages/FreePost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
 import { PostDetails } from "src/pages/TravelCommunityInfo";
 import { TravelClip } from "src/pages/TravelClip";
@@ -23,7 +24,7 @@ export const AppRouter = () => {
           <Route path="/" element={<LoginPage />} />
           <Route exact path='/kakao/callback' element={<Redirection />} />
           <Route path='/sign-up' element={<SignUp />} />
-          <Route path='/travelcommunity' element={<TravelCommunty />} />
+          <Route path='/travelCommunity' element={<TravelCommunity />} />
           <Route path='/main' element={<Main />} />
           <Route path='/community' element={<Community />} />
           <Route path='/mypage' element={<Mypage />} />
@@ -33,6 +34,7 @@ export const AppRouter = () => {
           <Route path='/travel-post' element={<TravelPost />} />
           <Route path='/TravelClip' element={<TravelClip />} />
           <Route path='/freecommunity' element={<FreeCommunity />} />
+          <Route path='/free-post' element={<FreePost />} />
           <Route path="/post-details/:category/:id" element={<PostDetails />} />
           <Route path="/100" element={<ChatAiTravel />} />
         </Routes>
