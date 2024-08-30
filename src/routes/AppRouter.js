@@ -12,6 +12,7 @@ import { TravelPlanPage } from "src/pages/TravelPlan";
 import { TravelPost } from "src/pages/TravelPost";
 import { FreePost } from "src/pages/FreePost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
+import { HotCommunity } from "src/pages/HotCommunity";
 import { PostDetails } from "src/pages/TravelCommunityInfo";
 import { TravelClip } from "src/pages/TravelClip";
 import { ChatAiTravel } from "src/pages/ChatAiTravel";
@@ -33,7 +34,8 @@ export const AppRouter = () => {
           <Route path='/travel-plan' element={<TravelPlanPage />} />
           <Route path='/travel-post' element={<TravelPost />} />
           <Route path='/TravelClip' element={<TravelClip />} />
-          <Route path='/freecommunity' element={<FreeCommunity />} />
+          <Route path='/freeCommunity' element={<FreeCommunity />} />
+          <Route path='/hotCommunity' element={<HotCommunity />} />
           <Route path='/free-post' element={<FreePost />} />
           <Route path="/post-details/:category/:id" element={<PostDetails />} />
           <Route path="/100" element={<ChatAiTravel />} />
