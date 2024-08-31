@@ -24,6 +24,7 @@ import { Travelmakecallender3 } from "src/pages/Travelmakecallender3/Travelmakec
 import { TravelMakeMember } from "src/pages/TravelMakeMember";
 import { TravelMakeFInal } from "src/pages/TravelMakeFInal";
 import { AnimatePresence, motion } from "framer-motion";
+import { TravelDetailCreate } from "src/pages/TravelDetail";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -57,6 +58,7 @@ const AnimatedRoutes = () => {
                 <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />  
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />
                 <Route path="/travel-make-final" element={<PageTransition><TravelMakeFInal /></PageTransition>} />
+                <Route path="/record-detail/:travelId" element={<PageTransition><TravelDetailCreate /></PageTransition>} />
                 <Route path="/aichat" element={<PageTransition><ChatAiTravel /></PageTransition>} />
             </Routes>
         </AnimatePresence>

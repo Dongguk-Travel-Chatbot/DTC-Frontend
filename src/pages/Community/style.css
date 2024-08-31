@@ -54,6 +54,7 @@
   letter-spacing: 0.5px; /* 자간 (글자 사이 간격) */
   line-height: 1.5; /* 줄 간격 */
   margin-top: 10px;
+  margin-bottom: -2px;
   position: relative;
 }
 

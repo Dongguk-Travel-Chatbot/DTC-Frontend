@@ -26,7 +26,7 @@ export const Community = () => {
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
             <div className="text-wrapper">인기게시판</div>
-            <div className="description">자유로운 주제로 대화하세요!</div>
+            <div className="description">가장 인기있는 게시글을 확인해보세요!</div>
           </div>
           <img className="icon" alt="Icon" src="https://c.animaapp.com/ZxwOpDDx/img/icon-2@2x.png" />
         </div>
@@ -48,7 +48,7 @@ export const Community = () => {
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
             <div className="text-wrapper">자유게시판</div>
-            <div className="description">즉석 여행 친구를 찾아보세요!</div>
+            <div className="description">자유로운 주제로 대화하세요!</div>
           </div>
           <img className="icon" alt="Icon" src="https://c.animaapp.com/ZxwOpDDx/img/icon-2@2x.png" />
         </div>

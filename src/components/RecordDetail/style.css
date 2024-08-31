@@ -1,0 +1,127 @@
+.record-detail {
+  height: 116px;
+  position: relative;
+  width: 322px;
+}
+
+.record-detail .text-wrapper-record-detail {
+  color: #202525;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  left: -5px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 9px;
+  white-space: nowrap;
+  width: 36px;
+}
+
+.record-detail .record-detail-box {
+  height: 116px;
+  left: 72px;
+  position: absolute;
+  top: 0;
+  width: 260px;
+}
+
+.record-detail .overlap-group {
+  background-color: #EAEBEB;
+  border-radius: 16px;
+  height: 116px;
+  position: relative;
+  width: 250px;
+}
+
+.record-detail .options-vertical {
+  height: 21px;
+  left: 218px;
+  position: absolute;
+  top: 15px;
+  width: 22px;
+}
+
+.record-detail .vector {
+  height: 10px;
+  left: 16px;
+  position: absolute;
+  top: 98px;
+  width: 9px;
+}
+
+.record-detail .text-wrapper-title-record-detail {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 17px;
+  left: 16px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  width: 100%;
+}
+
+.record-detail .text-wrapper-thema-record-detail {
+  color: #757676;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  height: 12px;
+  left: 16px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 34px;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.record-detail .text-wrapper-plan-record-detail {
+  color: #0d0d0d;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+  font-weight: 300;
+  height: 14px;
+  left: 16px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 53px;
+  white-space: nowrap;
+  width: 100%;;
+}
+
+.record-detail .text-wrapper-map-record-detail {
+  color: #252525;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 9px;
+  font-weight: 500;
+  height: 10px;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: 14px;
+  position: absolute;
+  top: 96.5px;
+  white-space: nowrap;
+  width: 54px;
+}
+
+.record-detail .p {
+  color: #0d0d0d;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 9px;
+  font-weight: 300;
+  height: 14px;
+  left: 16px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 80px;
+  width: 186px;
+}
+
+
