@@ -1,21 +1,27 @@
 import React from "react";
 import { PageHeader } from "../../components/PageHeader";
+import { useNavigate } from 'react-router-dom';
 import "./style.css";
 import { Footer } from "src/components/Footer";
 
 export const Community = () => {
+  let navigate = useNavigate(); // useNavigate 훅 사용
 
   let headerOption = {
-    pageTitle : "커뮤니티",
-    backIcon : true,
-    writeIcon : false
+    pageTitle: "커뮤니티",
+    backIcon: true,
+    writeIcon: false
+  }
+
+  const handleNavigation = (path) => {
+    navigate(path);
   }
 
   return (
     <div className="community">
-      <PageHeader className="page-header-instance" props={headerOption}/>
+      <PageHeader className="page-header-instance" props={headerOption} />
 
-      <div className="hot-community-button">
+      <div className="hot-community-button" onClick={() => handleNavigation('/hotcommunity')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
@@ -26,7 +32,7 @@ export const Community = () => {
         </div>
       </div>
 
-      <div className="travel-community">
+      <div className="travel-community-button" onClick={() => handleNavigation('/travelcommunity')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
@@ -37,7 +43,7 @@ export const Community = () => {
         </div>
       </div>
 
-      <div className="free-community">
+      <div className="free-community-button" onClick={() => handleNavigation('/freecommunity')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
@@ -47,7 +53,7 @@ export const Community = () => {
           <img className="icon" alt="Icon" src="https://c.animaapp.com/ZxwOpDDx/img/icon-2@2x.png" />
         </div>
       </div>
-      
+
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
     </div>
   );

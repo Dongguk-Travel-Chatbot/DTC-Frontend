@@ -5,7 +5,7 @@
   width: 375px;
 }
 
-.community .free-community {
+.community .free-community-button {
   height: 92px;
   left: 28px;
   position: absolute;
@@ -25,6 +25,7 @@
   padding: 16px 20px 16px 16px;
   position: relative;
   width: 319px;
+  color: #E5F0FA;
 }
 
 .community .button {
@@ -60,11 +61,12 @@
   align-self: stretch;
   color: var(--greygrey);
   font-family: "Manrope", Helvetica;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   letter-spacing: 0;
   line-height: normal;
   position: relative;
+  top: -5px; /* 요소를 5px 위로 이동 */
 }
 
 .community .icon {
@@ -73,7 +75,7 @@
   width: 24px;
 }
 
-.community .travel-community {
+.community .travel-community-button {
   height: 92px;
   left: 28px;
   position: absolute;
