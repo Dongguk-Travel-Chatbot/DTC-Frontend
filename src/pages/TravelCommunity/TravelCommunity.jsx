@@ -4,7 +4,7 @@ import { PageHeader } from "../../components/PageHeader";
 import { Post } from "../../components/Post";
 import "./style.css";
 import { instance } from "src/apis/axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   const [visiblePages, setVisiblePages] = useState([]);
@@ -71,6 +71,7 @@ export const TravelCommunity = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const location = useLocation();
+  const navigate = useNavigate();
 
   let headerOption = {
     pageTitle: "여행 게시판",
@@ -112,7 +113,9 @@ export const TravelCommunity = () => {
       <PageHeader className="page-header-instance" props={headerOption} />
       <div className="posts-container">
         {posts.map((eachpost) => (
-          <Post key={eachpost.id} className="post-instance" props={eachpost} />
+          <div onClick={()=>{navigate("/post-details/travel/" + eachpost.post_id)}}> 
+            <Post key={eachpost.id} className="post-instance" props={eachpost} />
+          </div>
         ))}
       </div>
       <Pagination

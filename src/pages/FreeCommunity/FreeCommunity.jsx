@@ -4,12 +4,13 @@ import { PageHeader } from "../../components/PageHeader";
 import { Post } from "../../components/Post";
 import "./style.css";
 import { instance } from "src/apis/axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const FreeCommunity = () => {
   const [posts, setPosts] = useState([]);
   const [isUpload, setIsUpload] = useState("");
   const location = useLocation();
+  const navigate = useNavigate();
 
   let headerOption = {
     pageTitle: "자유 게시판",
@@ -43,7 +44,9 @@ export const FreeCommunity = () => {
       <PageHeader className="page-header-instance" props={headerOption} />
       {
         posts.map((eachpost) => (
-          <Post key={eachpost.id} className="post-instance" props={eachpost} />  // 고유한 key prop 추가
+          <div onClick={()=>{navigate("/post-details/free/" + eachpost.post_id)}}> 
+            <Post key={eachpost.id} className="post-instance" props={eachpost} />  // 고유한 key prop 추가
+          </div>
         ))
       }
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />
