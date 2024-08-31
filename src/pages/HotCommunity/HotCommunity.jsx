@@ -14,7 +14,7 @@ export const HotCommunity = () => {
   let headerOption = {
     pageTitle: "인기 게시판",
     backIcon: true,
-    writeIcon: false
+    writeIcon: true
   };
 
   useEffect(() => {

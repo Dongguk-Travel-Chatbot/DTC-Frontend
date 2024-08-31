@@ -1,119 +1,113 @@
 .hot-post-in-main {
-  height: 68px;
-  position: relative;
-  width: 344px;
+  display: flex;
+  flex-direction: column; /* 자식 요소들을 세로로 정렬 */
+  align-items: center; /* 자식 요소들을 중앙 정렬 */
+  gap: 16px; /* 각 항목 간의 간격 */
+  width: 100%; /* 부모 요소의 너비를 가득 채움 */
+  padding: 16px; /* 내부 패딩 추가 */
+  box-sizing: border-box; /* 패딩과 함께 너비를 계산 */
 }
 
-.hot-post-in-main .location-image {
-  background-color: #c4c4c4;
+.hot-post-item {
+  display: flex;
+  flex-direction: row; /* 이미지와 텍스트 컨테이너를 가로로 배치 */
+  align-items: flex-start; /* 이미지와 텍스트를 위쪽에 맞춤 */
+  width: 100%;
+  max-width: 600px; /* 아이템의 최대 너비 설정 */
+  background-color: #ffffff; /* 배경 색상 추가 */
+  padding-top: 10px; /* 내부 패딩 추가 */
+  
+  margin: 0 auto; /* 아이템을 중앙에 배치 */
+  margin-left: -10px; /* 이 부분을 추가하여 왼쪽으로 이동 */
+}
+
+
+.location-image {
+  width: 100px; /* 이미지 크기 */
+  height: 68px;
   border-radius: 4px;
-  height: 68px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 121px;
+  object-fit: cover;
+  margin-right: 16px; /* 이미지와 텍스트 간의 간격 설정 */
 }
 
-.hot-post-in-main .text-wrapper {
+.text-container {
+  display: flex;
+  flex-direction: column; /* 텍스트 요소들을 세로로 정렬 */
+  justify-content: flex-start; /* 텍스트들을 위쪽으로 정렬 */
+  flex-grow: 1;
+  margin-top: 3px; /* 이 부분이 추가되었습니다 */
+}
+
+
+.text-wrapper {
   color: #000000;
   font-family: "Gmarket Sans TTF-Medium", Helvetica;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  left: 130px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
+  margin-bottom: 4px; /* 텍스트와 다른 요소들 사이의 간격 */
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.hot-post-in-main .location {
-  height: 14px;
-  left: 130px;
-  position: absolute;
-  top: 24px;
-  width: 42px;
-}
-
-.hot-post-in-main .location-2 {
-  height: 14px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 12px;
-}
-
-.hot-post-in-main .div {
-  color: #252525b2;
-  font-family: "Gmarket Sans TTF-Light", Helvetica;
+.location {
+  display: flex;
+  align-items: center;
   font-size: 12px;
-  font-weight: 300;
+  color: #a1a1a1;
+  margin-bottom: 4px; /* 위치 아이콘과 닉네임 사이의 간격 */
+}
+
+.location-2 {
+  width: 14px;
   height: 14px;
-  left: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
+  margin-right: 4px;
 }
 
-.hot-post-in-main .writer {
-  height: 19px;
-  left: 130px;
-  position: absolute;
-  top: 46px;
-  width: 61px;
+.bottom-row {
+  display: flex;
+  justify-content: space-between; /* writer와 post-like를 양 끝에 배치 */
+  align-items: center;
 }
 
-.hot-post-in-main .text-wrapper-2 {
+.writer {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+
+.user-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 8px; /* 닉네임과 프로필 이미지 간격 */
+}
+
+.text-wrapper-2 {
   color: #a1a1a1;
   font-family: "Gmarket Sans TTF-Light", Helvetica;
   font-size: 12px;
   font-weight: 300;
-  height: 14px;
-  left: 24px;
-  letter-spacing: -0.2px;
-  line-height: normal;
-  position: absolute;
-  top: 3px;
-  white-space: nowrap;
 }
 
-.hot-post-in-main .image {
-  height: 19px;
-  left: 0;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  width: 20px;
-}
-
-.hot-post-in-main .post-like {
-  height: 16px;
-  left: 316px;
-  position: absolute;
-  top: 50px;
-  width: 30px;
-}
-
-.hot-post-in-main .text-wrapper-3 {
+.post-like {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
   color: var(--steel-gray-540);
+}
+
+.text-wrapper-3 {
+  margin-left: 4px;
   font-family: "Gmarket Sans TTF-Medium", Helvetica;
   font-size: 12px;
   font-weight: 500;
-  height: 16px;
-  left: 14px;
-  letter-spacing: 0;
-  line-height: 16px;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
 }
 
-.hot-post-in-main .vector {
-  height: 12px;
-  left: 0;
-  position: absolute;
-  top: 2px;
+.vector {
   width: 12px;
+  height: 12px;
+  position: relative; /* 현재 위치를 기준으로 조정 */
+  top: -0.5px; /* 위로 2px 이동, 값을 조정하여 원하는 위치로 맞춤 */
 }
