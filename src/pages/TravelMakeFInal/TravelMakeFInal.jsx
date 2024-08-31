@@ -2,8 +2,10 @@ import React from "react";
 import "./style.css";
 import { PageHeader } from "src/components/PageHeader";
 import { NextButton } from "src/components/NextButton";
+import { useNavigate } from "react-router-dom";
 
 export const TravelMakeFInal = () => {
+  const navigate = useNavigate();
 
   let headerOption = {
     pageTitle: "",
@@ -27,7 +29,7 @@ export const TravelMakeFInal = () => {
         <div className="pagination-active" />
       </div>
 
-      <NextButton className="next-button-instance" />
+      <NextButton className="next-button-instance" onClick={()=>{navigate("/aichat")}}/>
     </div>
   );
 };

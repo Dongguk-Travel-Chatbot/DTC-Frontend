@@ -87,7 +87,7 @@ export const Mypage = () => {
       </div>
       <div className="my-post-button" onClick={() => navigate('/mypost')}>
         <div className="overlap-group">
-          <div className="text-wrapper">My Posts</div>
+          <div className="div">My Posts</div>
         </div>
       </div>
       <div className="my-trip-button" onClick={() => navigate('/travel-record')}>

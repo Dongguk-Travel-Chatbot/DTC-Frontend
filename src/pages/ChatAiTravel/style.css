@@ -33,7 +33,6 @@
 .chat-AI-travel .chat-input-box {
   background-color: transparent;
   height: 60px;
-  position: fixed;
   bottom: 0;
   width: 375px;
   display: flex;
@@ -74,10 +73,23 @@
   width: 3px;
 }
 
-.loading-image-container {
+.loading-container {
   position: absolute;
-  top: 260px;
-  left: 95px;
-  z-index: 100000;
-  transform: scale(1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.loaging-text {
+  background-color: rgba(255, 255, 255, 0.404);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;  /* 텍스트 색상 */
+  font-family: "Gmarket Sans TTF-light", Helvetica;
+  font-size: 15px;  /* 텍스트 크기 */
+  font-weight: bold;  /* 텍스트 두께 */
+  white-space: nowrap;
 }
