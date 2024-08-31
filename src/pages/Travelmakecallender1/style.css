@@ -1,0 +1,217 @@
+.travelmakecallender-screen {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.travelmakecallender-screen .dot-2 {
+  height: 8px;
+  left: 162px;
+  position: absolute;
+  top: 645px;
+  width: 50px;
+}
+
+.travelmakecallender-screen .pagination-active-2 {
+  background-color: #0002ff;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-screen .pagination-deactive-3 {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 42px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-screen .pagination-deactive-4 {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 21px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-screen .text-wrapper-3 {
+  color: var(--light-primary);
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 28px;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 106px;
+  width: 262px;
+}
+
+.travelmakecallender-screen .month-selector-2 {
+  height: 28px;
+  left: 19px;
+  position: absolute;
+  top: 189px;
+  width: 193px;
+}
+
+.travelmakecallender-screen .text-wrapper-4 {
+  color: #252525b2;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 28px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 191px;
+}
+
+.travelmakecallender-screen .arrows-2 {
+  height: 13px;
+  left: 312px;
+  position: absolute;
+  top: 196px;
+  width: 41px;
+}
+
+.travelmakecallender-screen .callender-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 302px;
+  left: 15px;
+  position: absolute;
+  top: 240px;
+  width: 346px;
+}
+
+.travelmakecallender-screen .frame-8 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.travelmakecallender-screen .frame-9 {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+  width: 50px;
+}
+
+.travelmakecallender-screen .text-wrapper-5 {
+  color: #a1a1a1;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.travelmakecallender-screen .frame-10 {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  margin-right: -4px;
+  padding: 10px;
+  position: relative;
+  width: 50px;
+}
+
+.travelmakecallender-screen .frame-11 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin-right: -4px;
+  position: relative;
+}
+
+.travelmakecallender-screen .frame-instance {
+  flex: 0 0 auto !important;
+}
+
+.travelmakecallender-screen .frame-12 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.travelmakecallender-screen .SU-3 {
+  color: #000000;
+  font-family: "Roboto", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.travelmakecallender-screen .frame-13 {
+  align-items: flex-start;
+  display: flex;
+  height: 42px;
+  position: relative;
+  width: 346px;
+}
+
+.travelmakecallender-screen .frame-14 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  margin-bottom: -8px;
+  position: relative;
+}
+
+.travelmakecallender-screen .frame-15 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  margin-bottom: -8px;
+  margin-right: -4px;
+  position: relative;
+}
+
+.travelmakecallender-screen .next-button-instance {
+  left: 29px !important;
+  position: absolute !important;
+  top: 701px !important;
+}

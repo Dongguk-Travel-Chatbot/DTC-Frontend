@@ -1,0 +1,90 @@
+.travel-make-final {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.travel-make-final .text-wrapper-fin {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 26px;
+  font-weight: 700;
+  left: 22px;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  text-align: center;
+  top: 437px;
+  white-space: nowrap;
+  width: 331px;
+}
+
+.travel-make-final .image {
+  height: 318px;
+  left: 15px;
+  object-fit: cover;
+  position: absolute;
+  top: 110px;
+  width: 346px;
+}
+
+.travel-make-final .AI-AI {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 535px;
+  width: 344px;
+}
+
+.travel-make-final .dot {
+  height: 8px;
+  left: 162px;
+  position: absolute;
+  top: 645px;
+  width: 50px;
+}
+
+.travel-make-final .pagination-deactive {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 21px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-final .div {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-final .pagination-active {
+  background-color: #0002ff;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 42px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-final .next-button-instance {
+  left: 29px !important;
+  position: absolute !important;
+  top: 701px !important;
+}
