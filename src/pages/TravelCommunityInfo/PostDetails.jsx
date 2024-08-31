@@ -6,8 +6,6 @@ import { useParams } from "react-router-dom";
 import { instance } from "src/apis/axios";
 import { PageHeader } from "src/components/PageHeader";
 
-import  {KakaoMap}  from "src/components/KakaoMap";
-
 import ProfileDogCircle from "src/assets/ProfileDogCircle.svg";
 import ProfileRabbitCircle from "src/assets/ProfileRabbitCircle.svg";
 import ProfileBearCircle from "src/assets/ProfileBearCircle.svg";
