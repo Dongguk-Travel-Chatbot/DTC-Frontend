@@ -34,6 +34,7 @@
   position: absolute;
   top: 0;
   width: 325px;
+  word-wrap: break-word;
 }
 
 .post-details .post-title {

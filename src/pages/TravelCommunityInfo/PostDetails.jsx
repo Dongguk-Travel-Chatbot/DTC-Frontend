@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 import { instance } from "src/apis/axios";
 import { PageHeader } from "src/components/PageHeader";
 
+import  {KakaoMap}  from "src/components/KakaoMap";
+
 import ProfileDogCircle from "src/assets/ProfileDogCircle.svg";
 import ProfileRabbitCircle from "src/assets/ProfileRabbitCircle.svg";
 import ProfileBearCircle from "src/assets/ProfileBearCircle.svg";
@@ -23,6 +25,7 @@ export const PostDetails = () => {
   const [data, setData] = useState({});
   const [comments, setComments] = useState([]); // 빈 배열로 초기화
   const [loading, setLoading] = useState(true); // 로딩 상태 추가
+  const [comment, setComment] = useState(""); // 입력된 댓글을 저장하는 상태
 
   const profiles = [
     ProfileDogCircle,
@@ -88,6 +91,17 @@ export const PostDetails = () => {
       });
   }, [id]);
 
+  const handleCommentChange = (event) => {
+    setComment(event.target.value); // 입력된 값을 상태에 저장
+  };
+
+  const handleCommentSubmit = () => {
+    // 댓글 제출 로직 처리
+    console.log("Submitted comment:", comment);
+    setComment(""); // 입력창 초기화
+    // 추가로 서버에 댓글을 전송하는 로직을 추가할 수 있습니다.
+  };
+
   if (loading) {
     return <div></div>; // 로딩 중일 때 보여줄 화면
   }
@@ -114,7 +128,6 @@ export const PostDetails = () => {
             </div>
           </div>
         </div>
-
         <TravelRecord className="travel-record-instance" props={travel} />
 
         <div className="post-title">
@@ -151,15 +164,19 @@ export const PostDetails = () => {
       <div className="post-comment-frame">
         <img className="post-line-2" alt="Post line" src="https://c.animaapp.com/CeWmk5Rx/img/postlile-1@2x.png" />
         <div className="post-comment-2">
-          <div className="post-comment-writer-2" />
-          <img className="post-comment-writer-2" src={profiles[0]} /> {/*수정해야할 부분*/}
-          <div className="post-comment-box-2">
-            <div className="text-wrapper-26">입력하세요.</div>
-          </div>
+          <img className="post-comment-writer-2" src={profiles[0]} /> 
+          <input
+            type="text"
+            className="post-comment-box-2"
+            placeholder="입력하세요"
+            value={comment} // 상태값을 input의 value에 바인딩
+            onChange={handleCommentChange} // 값이 변경될 때마다 handleCommentChange 호출
+          />
           <img
             className="post-comment-button-2"
             alt="Post comment button"
             src="https://c.animaapp.com/CeWmk5Rx/img/postcommentbutton-2@2x.png"
+            onClick={handleCommentSubmit} // 버튼 클릭 시 handleCommentSubmit 호출
           />
         </div>
       </div>
