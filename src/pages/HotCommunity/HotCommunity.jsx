@@ -4,9 +4,10 @@ import { PageHeader } from "../../components/PageHeader";
 import { Post } from "../../components/Post";
 import "./style.css";
 import { instance } from "src/apis/axios";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const HotCommunity = () => {
+  const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const [isUpload, setIsUpload] = useState("");
   const location = useLocation();
@@ -42,7 +43,9 @@ export const HotCommunity = () => {
       <PageHeader className="page-header-instance" props={headerOption} />
       {
         posts.map((eachpost) => (
-          <Post key={eachpost.id} className="post-instance" props={eachpost} />  // 고유한 key prop 추가
+          <div onClick={()=>{navigate("/post-details/hot/" + eachpost.post_id)}}>
+            <Post key={eachpost.id} className="post-instance" props={eachpost} />  // 고유한 key prop 추가
+          </div>
         ))
       }
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />

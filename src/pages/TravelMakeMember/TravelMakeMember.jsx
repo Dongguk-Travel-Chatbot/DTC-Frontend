@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { PageHeader } from "src/components/PageHeader";
 import { NextButton } from "src/components/NextButton";
 import { instance } from "src/apis/axios";
-import { useNavigate } from "react-router-dom"; // useNavigate 추가
+import { useLocation, useNavigate } from "react-router-dom"; // useNavigate 추가
 
 export const TravelMakeMember = () => {
   const [adultNum, setAdult] = useState(0);
@@ -11,6 +11,8 @@ export const TravelMakeMember = () => {
   const [kindergardenNum, setKindergarden] = useState(0);
   const [animalNum, setAnimal] = useState(0);
   const [totalNum, setTotal] = useState(0);
+  const location = useLocation();
+  const { departDate, arriveDate } = location.state || {};
 
   const navigate = useNavigate(); // useNavigate 훅 사용
 
@@ -65,7 +67,7 @@ export const TravelMakeMember = () => {
       <div className="date-rectangle-group">
         <div className="overlap-group">
           <div className="text-wrapper-mem">날짜</div>
-          <p className="div">10월 16일 ~ 10월 18일</p>
+          <p className="div">{departDate} ~ {arriveDate}</p>
         </div>
       </div>
       <div className="adult-selector">

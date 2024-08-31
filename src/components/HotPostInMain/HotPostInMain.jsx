@@ -13,9 +13,11 @@ import ProfileFoxCircle from "src/assets/ProfileFoxCircle.svg";
 import ProfileCatCircle from "src/assets/ProfileCatCircle.svg";
 import ProfileKoalaCircle from "src/assets/ProfileKoalaCircle.svg";
 import ProfileLionCircle from "src/assets/ProfileLionCircle.svg";
+import { useNavigate } from "react-router-dom";
 
 export const HotPostInMain = ({ className }) => {
   const [topPosts, setTopPosts] = useState([]);
+  const navigate = useNavigate();
 
   const profiles = [
     ProfileDogCircle,
@@ -48,7 +50,7 @@ export const HotPostInMain = ({ className }) => {
   return (
     <div className={`hot-post-in-main ${className}`}>
       {topPosts.map((post, index) => (
-        <div key={index} className="hot-post-item">
+        <div key={index} className="hot-post-item" onClick={()=>{navigate("/post-details/hot/" + post.post_id)}}>
           <img src="https://th.bing.com/th/id/OIP.ipFdmKnqrY13gld80j2nEwHaEK?w=322&h=181&c=7&r=0&o=5&pid=1.7" alt={post.title} className="location-image" />
           <div className="text-container">
             <div className="text-wrapper">{post.title}</div>
