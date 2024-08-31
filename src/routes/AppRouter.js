@@ -46,7 +46,6 @@ const AnimatedRoutes = () => {
                 <Route path='/travel-clip' element={<TravelClip />} />
                 <Route path='/free-post' element={<FreePost />} />
                 <Route path='/community' element={<Community />} />
-                <Route path="/post-details/:category/:id" element={<PostDetails />} />
                 <Route path="/travel-callender2" element={<Travelmakecallender2 />} />
                 <Route path="/travel-callender3" element={<Travelmakecallender3 />} />
 
@@ -58,6 +57,7 @@ const AnimatedRoutes = () => {
                 <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />  
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />
                 <Route path="/travel-make-final" element={<PageTransition><TravelMakeFInal /></PageTransition>} />
+                <Route path="/post-details/:category/:id" element={<PageTransition><PostDetails /></PageTransition>} />
                 <Route path="/record-detail/:travelId" element={<PageTransition><TravelDetailCreate /></PageTransition>} />
                 <Route path="/aichat" element={<PageTransition><ChatAiTravel /></PageTransition>} />
             </Routes>
