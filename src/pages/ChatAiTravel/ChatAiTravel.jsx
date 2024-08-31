@@ -17,6 +17,7 @@ export const ChatAiTravel = () => {
   const [transition, setTransition] = useState(false);
   const navigate = useNavigate();
   const [stepChange, setStepChange] = useState(0);
+  const [travelId, setTravelId] = useState(0);
 
   useEffect(() => {
     const initialMessage = {
@@ -151,7 +152,7 @@ export const ChatAiTravel = () => {
               break;
 
             case 4:
-              const { final_message, final_recommends } = response.data.data;
+              const { final_message, travel_id, final_recommends } = response.data.data;
 
               const aiFinalResponse = {
                 type: "ai",
@@ -159,6 +160,7 @@ export const ChatAiTravel = () => {
                 className: 'chat-bubble'
               };
 
+              setTravelId(travel_id);
               setChats((prevChats) => [...prevChats, aiFinalResponse]);
 
               final_recommends.forEach((final_recommend, index) => {
@@ -209,7 +211,7 @@ export const ChatAiTravel = () => {
 
   useEffect(() => {
     if (transition) {
-      navigate("/main");
+      navigate("/record-detail" + "/" + travelId);
     }
   }, [transition, navigate]);
 
