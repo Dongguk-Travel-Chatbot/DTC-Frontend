@@ -5,12 +5,19 @@ import { PageHeader } from "src/components/PageHeader";
 import { NextButton } from "src/components/NextButton";
 import Arrows from "src/assets/Arrows.svg"
 
+import { useNavigate } from "react-router-dom"; // 수정된 부분
+
 export const Travelmakecallender1 = () => {
 
   let headerOption = {
     pageTitle: "",
     backIcon: true,
     writeIcon: false
+  };
+
+  const navigate = useNavigate(); // react-router-dom에서 가져오기
+  const handleClick = () => {
+    navigate("/travel-callender2"); // 특정 경로로 이동
   };
 
   return (
@@ -120,7 +127,7 @@ export const Travelmakecallender1 = () => {
           </div>
           <div className="frame-12">
             <div className="frame-9">
-              <div className="SU-3">16</div>
+              <div className="SU-3" onClick={handleClick}>16</div>
             </div>
           </div>
           <div className="frame-12">

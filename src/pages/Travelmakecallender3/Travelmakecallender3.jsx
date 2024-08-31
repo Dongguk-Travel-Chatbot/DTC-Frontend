@@ -1,22 +1,57 @@
-import React from "react";
+import React, { useState } from "react";
 import { Frame } from "../../components/Frame";
 import "./style.css";
 import { PageHeader } from "src/components/PageHeader";
 import { NextButton } from "src/components/NextButton";
-import Arrows from "src/assets/Arrows.svg"
-import SelectDate from "src/assets/SelectDate.svg"
+import Arrows from "src/assets/Arrows.svg";
+import SelectDate from "src/assets/SelectDate.svg";
+import { useNavigate } from "react-router-dom";
+import { instance } from "src/apis/axios";
 
 export const Travelmakecallender3 = () => {
+  const [departDate, setDepartDate] = useState("2024-08-16");
+  const [arriveDate, setArriveDate] = useState("2024-08-18");
+  const [errorMessage, setErrorMessage] = useState(null);
+  const navigate = useNavigate();
 
   let headerOption = {
     pageTitle: "",
     backIcon: true,
-    writeIcon: false
+    writeIcon: false,
+  };
+
+  const handleClick = async () => {
+    try {
+      // POST 요청 보내기
+      const response = await instance.post(
+        `/api/temp-place`,
+        {
+          depart_at: departDate, // 실제 출발 날짜
+          arrive_at: arriveDate, // 실제 도착 날짜
+        },
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+        }
+      );
+
+      if (response.status === 201) {
+        console.log("Post 성공:", response.data);
+        navigate("/travel-make-member"); // 특정 경로로 이동
+      } else {
+        setErrorMessage("여행 계획 생성에 실패했습니다. 다시 시도해 주세요.");
+      }
+    } catch (error) {
+      setErrorMessage("오류가 발생했습니다. 다시 시도해 주세요.");
+    }
   };
 
   return (
     <div className="travelmakecallender">
       <PageHeader className="page-header-instance" props={headerOption} />
+      
+      {errorMessage && <div className="error-message">{errorMessage}</div>}
 
       <div className="text-wrapper-cal1">여행날짜는 언제인가요?</div>
       <div className="month-selector">
@@ -216,7 +251,7 @@ export const Travelmakecallender3 = () => {
         <div className="pagination-deactive-2" />
       </div>
 
-      <NextButton className="next-button-instance" />
+      <NextButton className="next-button-instance" onClick={handleClick} />
     </div>
   );
 };
