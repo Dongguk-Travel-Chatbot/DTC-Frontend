@@ -3,23 +3,98 @@
   position: relative;
 }
 
+.chat-AI .custom-text{
+  color:black;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 12px;
+}
+
 .chat-AI .chat-bubble {
   background-color: #f5f5f5;
   border: 1px solid;
   border-color: var(--g-grey-inactive);
   border-radius: 20px 20px 20px 0px;
-  height: 173px;
-  left: 36px;
-  position: absolute;
-  top: 0;
-  width: 310px;
+  padding: 10px 10px 10px 10px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
+  margin-bottom: 1px;
+  position: relative;
+}
+
+.chat-AI .chat-bubble-middle {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 0px 20px 20px 0px;
+  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
+  margin-bottom: 1px;
+  position: relative
+}
+
+.chat-AI .chat-bubble-last {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 0px 20px 20px 20px;
+  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.chat-AI .chat-bubble-only {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.chat-AI .chat-bubble-final {
+  background-color: #f5f5f5;
+  border: 1px solid;
+  border-color: var(--g-grey-inactive);
+  border-radius: 0px 20px 20px 20px;
+  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .chat-AI .DTC-image {
   height: 30px;
-  left: 0;
-  object-fit: cover;
   position: absolute;
-  top: 143px;
+  left: 0;
+  bottom: 0px;
   width: 30px;
+  /*object-fit: cover;*/
+}
+
+.chat-AI .chat-bubble.selected {
+  background-color: #8d8b8b
+  ; /* 선택된 상태일 때 배경색을 변경 */
+  cursor: pointer;
+}
+
+.chat-AI .chat-bubble-middle.selected {
+  background-color:  #8d8b8b; /* 선택된 상태일 때 배경색을 변경 */
+  cursor: pointer;
+}
+
+.chat-AI .chat-bubble-last.selected {
+  background-color:  #8d8b8b; /* 선택된 상태일 때 배경색을 변경 */
+  cursor: pointer;
 }
