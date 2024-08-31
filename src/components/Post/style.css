@@ -15,7 +15,7 @@
 }
 
 .post .text-wrapper {
-  color: var(--gray-400);
+  color: #313131;
   font-family: "Gmarket Sans TTF-Light", Helvetica;
   font-size: 12.5px;
   font-weight: 300;
@@ -28,7 +28,22 @@
   white-space: nowrap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .post .div {
+  color: #333333; /* 약간 어두운 회색으로 변경 */
+  font-size: 16px; /* 폰트 크기를 약간 키움 */
+  font-weight: 500; /* 폰트 굵기 */
+  height: 30px;
+  left: 20px;
+  letter-spacing: -0.1px; /* 자간 조정 */
+  line-height: 1.5; /* 행간을 조정하여 가독성 향상 */
+  position: absolute;
+  top: 15px;
+  width: 800px;
+}
+
+.post .title {
   color: #000000;
   font-family: "Gmarket Sans TTF-Medium", Helvetica;
   font-size: 14px;
@@ -36,14 +51,14 @@
   height: 28px;
   left: 20px;
   letter-spacing: -0.2px;
-  line-height: normal;
+  line-height: 0.2;
   position: absolute;
   top: 15px;
   width: 800px;
 }
 
 .post .text-wrapper-2 {
-  color: #a1a1a1;
+  color: black;
   font-family: "Gmarket Sans TTF-Light", Helvetica;
   font-size: 12px;
   font-weight: 300;

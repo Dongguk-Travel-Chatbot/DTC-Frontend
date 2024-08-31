@@ -12,6 +12,10 @@ export const PageHeader = ({ className, props, onWriteIconClick }) => {
     navigate(props.writeUrl);
   };
 
+  const handleBack = () => {
+    navigate(-1); //뒤로가기
+  };
+
   return (
     <div className={`page-header ${className}`}>
       {props.backIcon ? (
@@ -20,6 +24,7 @@ export const PageHeader = ({ className, props, onWriteIconClick }) => {
             className="vector-2"
             alt="Vector"
             src="https://c.animaapp.com/GmpRJdJZ/img/vector-7@2x.png"
+            onClick={handleBack}
           />
         </div>
       ) : null}

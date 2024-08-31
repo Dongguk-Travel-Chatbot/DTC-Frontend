@@ -46,14 +46,14 @@
 
 .community .text-wrapper {
   align-self: stretch;
-  color: var(--blackblack);
-  font-family: var(--main-body-bold-font-family);
-  font-size: var(--main-body-bold-font-size);
-  font-style: var(--main-body-bold-font-style);
-  font-weight: var(--main-body-bold-font-weight);
-  letter-spacing: var(--main-body-bold-letter-spacing);
-  line-height: var(--main-body-bold-line-height);
-  margin-top: -1px;
+  color: #000000; /* 검정색 텍스트 */
+  font-family: 'Roboto', sans-serif; /* 폰트 패밀리 설정 */
+  font-size: 16px; /* 폰트 크기 */
+  font-style: normal; /* 폰트 스타일 (이탤릭체가 아닌 일반체) */
+  font-weight: 700; /* 폰트 두께 (bold) */
+  letter-spacing: 0.5px; /* 자간 (글자 사이 간격) */
+  line-height: 1.5; /* 줄 간격 */
+  margin-top: 10px;
   position: relative;
 }
 

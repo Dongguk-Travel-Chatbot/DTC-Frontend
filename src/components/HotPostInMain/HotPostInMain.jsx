@@ -54,7 +54,7 @@ export const HotPostInMain = ({ className }) => {
             <div className="text-wrapper">{post.title}</div>
             <div className="location">
               <img className="location-2" alt="Location" src="https://c.animaapp.com/N1lyDyYc/img/location-1@2x.png" />
-              <div className="place-name">{post.place}</div>
+              <div className="text-wrapper-2">{post.place}</div>
             </div>
             <div className="bottom-row">
               <div className="writer">

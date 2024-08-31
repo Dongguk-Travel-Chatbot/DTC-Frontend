@@ -34,6 +34,7 @@
 
 .hot-community .text-wrapper {
   position: relative;
+  color: var(--steel-gray-540);
   left: 84px; /* 원하는 만큼 왼쪽으로 이동 */
   top: 37px; /* 원하는 만큼 아래로 이동 */
 }

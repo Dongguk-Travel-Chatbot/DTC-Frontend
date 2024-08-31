@@ -35,7 +35,7 @@ export const Post = ({ className = "", props = {} }) => {
 
   return (
     <div className={`post ${className}`}>
-      <div className="div">{props.title || "Untitled Post"}</div>
+      <div className="title">{props.title || "Untitled Post"}</div>
       
       <div className="text-wrapper-2">{user.nickname || "Unknown User"}</div>
       <img className="image" alt="Profile" src={profileImage} />
