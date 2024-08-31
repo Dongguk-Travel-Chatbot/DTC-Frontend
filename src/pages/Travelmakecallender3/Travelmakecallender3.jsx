@@ -38,7 +38,12 @@ export const Travelmakecallender3 = () => {
 
       if (response.status === 201) {
         console.log("Post 성공:", response.data);
-        navigate("/travel-make-member"); // 특정 경로로 이동
+        navigate("/travel-make-member", {
+          state: {
+            departDate: departDate,
+            arriveDate: arriveDate,
+          },
+        }); // 특정 경로로 이동하면서 state에 데이터 전달
       } else {
         setErrorMessage("여행 계획 생성에 실패했습니다. 다시 시도해 주세요.");
       }
@@ -50,7 +55,7 @@ export const Travelmakecallender3 = () => {
   return (
     <div className="travelmakecallender">
       <PageHeader className="page-header-instance" props={headerOption} />
-      
+
       {errorMessage && <div className="error-message">{errorMessage}</div>}
 
       <div className="text-wrapper-cal1">여행날짜는 언제인가요?</div>
