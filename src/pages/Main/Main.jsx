@@ -3,14 +3,19 @@ import { Footer } from "../../components/Footer";
 import { HotPostInMain } from "../../components/HotPostInMain";
 import ChatbotPlanButton from "src/assets/ChatbotPlanButton.svg";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export const Main = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="main">
       <img
         className="chatbot-plan-button"
         alt="Chatbot plan button"
         src={ChatbotPlanButton}
+        onClick={() => navigate("/travel-make-basic")}
       />
       <div className="main-plan-recommend">
         <div className="div-wrapper">
