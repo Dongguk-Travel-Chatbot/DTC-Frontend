@@ -21,7 +21,7 @@ export const Community = () => {
     <div className="community">
       <PageHeader className="page-header-instance" props={headerOption} />
 
-      <div className="hot-community-button" onClick={() => handleNavigation('/hotcommunity')}>
+      <div className="hot-community-button" onClick={() => handleNavigation('/hot-community')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
@@ -32,7 +32,7 @@ export const Community = () => {
         </div>
       </div>
 
-      <div className="travel-community-button" onClick={() => handleNavigation('/travelcommunity')}>
+      <div className="travel-community-button" onClick={() => handleNavigation('/travel-community')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">
@@ -43,7 +43,7 @@ export const Community = () => {
         </div>
       </div>
 
-      <div className="free-community-button" onClick={() => handleNavigation('/freecommunity')}>
+      <div className="free-community-button" onClick={() => handleNavigation('/free-community')}>
         <div className="card">
           <img className="button" alt="Button" src="https://c.animaapp.com/ZxwOpDDx/img/button-2@2x.png" />
           <div className="menu">

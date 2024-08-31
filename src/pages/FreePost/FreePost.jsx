@@ -13,7 +13,7 @@ export const FreePost = () => {
     pageTitle: "글쓰기",
     backIcon: true,
     writeIcon: true,
-    writeUrl: "/freecommunity", // POST 요청 성공 시 이동할 URL 설정
+    writeUrl: "/free-community", // POST 요청 성공 시 이동할 URL 설정
   };
 
   // 제목과 본문 상태

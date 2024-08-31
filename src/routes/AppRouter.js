@@ -42,7 +42,7 @@ const AnimatedRoutes = () => {
                 <Route path='/travel-record' element={<TravelRecordPage />} />
                 <Route path='/travel-plan' element={<TravelPlanPage />} />
                 <Route path='/travel-post' element={<TravelPost />} />
-                <Route path='/TravelClip' element={<TravelClip />} />
+                <Route path='/travel-clip' element={<TravelClip />} />
                 <Route path='/free-post' element={<FreePost />} />
                 <Route path='/community' element={<Community />} />
                 <Route path="/post-details/:category/:id" element={<PostDetails />} />
@@ -50,9 +50,9 @@ const AnimatedRoutes = () => {
                 <Route path="/travel-callender3" element={<Travelmakecallender3 />} />
 
                 {/* 애니메이션 적용 경로 */}
-                <Route path='/freeCommunity' element={<PageTransition><FreeCommunity /></PageTransition>} />
-                <Route path='/hotCommunity' element={<PageTransition><HotCommunity /></PageTransition>} />
-                <Route path='/travelCommunity' element={<PageTransition><TravelCommunity /></PageTransition>} />
+                <Route path='/free-community' element={<PageTransition><FreeCommunity /></PageTransition>} />
+                <Route path='/hot-community' element={<PageTransition><HotCommunity /></PageTransition>} />
+                <Route path='/travel-community' element={<PageTransition><TravelCommunity /></PageTransition>} />
                 <Route path="/travel-make-basic" element={<PageTransition><TravelMakeBasic /></PageTransition>} />
                 <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />  
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />

@@ -13,7 +13,7 @@ export const TravelPost = () => {
     pageTitle: "글쓰기",
     backIcon: true,
     writeIcon: true,
-    writeUrl: "/travelcommunity", // POST 요청 성공 시 이동할 URL 설정
+    writeUrl: "/travel-community", // POST 요청 성공 시 이동할 URL 설정
   };
 
   // 제목과 본문 상태
@@ -53,7 +53,7 @@ export const TravelPost = () => {
   const handleContentChange = (e) => setContent(e.target.value);
 
   const handleClipClick = () => {
-    navigate("/TravelClip");
+    navigate("/travel-clip");
   };
 
   const handleWritePost = async () => {
