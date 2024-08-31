@@ -11,6 +11,11 @@ export const TravelComponent = ({ className, props }) => {
   return (
     <div className={`travel-component ${className}`}>
       <div className="travel-title">
+        <p className="p">
+            <span className="text-title">
+              {props.title}
+            </span>
+          </p>
         <div className="text-wrapper">{props.title}</div>
       </div>
       <div className="travel-content">
