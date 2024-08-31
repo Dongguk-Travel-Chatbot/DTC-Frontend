@@ -46,27 +46,21 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
 
   return (
     <div className="pagination">
-      <button onClick={() => handlePageChange(1)} disabled={currentPage === 1}>
-        {"<<"}
-      </button>
-      <button onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
+      <text onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1} className="previous_next">
         {"<"}
-      </button>
+      </text>
       {visiblePages.map((page) => (
-        <button
+        <text
           key={page}
           onClick={() => handlePageChange(page)}
-          className={page === currentPage ? "active" : ""}
+          className={page === currentPage ? "active" : "deactive"}
         >
           {page}
-        </button>
+        </text>
       ))}
-      <button onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
+      <text onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages} className="previous_next">
         {">"}
-      </button>
-      <button onClick={() => handlePageChange(totalPages)} disabled={currentPage === totalPages}>
-        {">>"}
-      </button>
+      </text>
     </div>
   );
 };

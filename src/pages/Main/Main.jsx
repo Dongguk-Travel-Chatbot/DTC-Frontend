@@ -19,7 +19,7 @@ export const Main = () => {
       />
       <div className="main-plan-recommend">
         <div className="div-wrapper">
-          <p className="p">5월달에 꼭 가야하는 여행지 추천</p>
+          <p className="p">핫한 여행지 Top Picks</p>
         </div>
         <div className="text-wrapper-4"> 실시간 인기 여행지</div>
       </div>
