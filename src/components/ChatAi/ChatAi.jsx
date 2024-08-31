@@ -4,6 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 export const ChatAi = ({ className, content, isSelected, onClick }) => {
   const bubbleClassName = `${className} ${isSelected ? 'selected' : ''}`;
+  const navigate = useNavigate();
+  const [transition, setTransition] = useState(false);
+
+  useEffect(() => {
+    if (transition) {
+      navigate("/main");
+    }
+  }, [transition, navigate]);
 
   return (
     <div className={`chat-AI`} onClick={onClick}>

@@ -5,7 +5,7 @@ import { ChatUser } from "../../components/ChatUser";
 import { PageHeader } from "src/components/PageHeader";
 import { instance } from "src/apis/axios";
 import { useNavigate } from "react-router-dom";
-import Spinner from "./Spinner.gif";
+import Loading from "./loading.gif";
 
 export const ChatAiTravel = () => {
   const [chats, setChats] = useState([]);
@@ -29,7 +29,6 @@ export const ChatAiTravel = () => {
       5. 선호하는 숙소 유형은 무엇인가요? (호텔, 게스트하우스, 에어비앤비 등)<br />
       6. 이동 수단은 무엇을 선호하시나요? (렌터카, 대중교통, 도보 등)<br />
       7. 식사에 대한 선호사항이 있나요? (예: 특정 음식, 식단 제한 등)<br />
-      8. 고려해야 할 건강 또는 기타 사항이 있나요?<br />
       이 질문들에 대한 답변을 키워드로 주시면 맞춤형 여행 계획을 세우는 데 도움이 될 거예요.`,
       className: 'chat-bubble-only'
     };
@@ -100,7 +99,7 @@ export const ChatAiTravel = () => {
                 }
                 const aiChatResponse = {
                   type: "ai",
-                  content: `${place.place}: ${place.description}`,
+                  content: `${place.place}:<br />${place.description}`,
                   className: bubbleClass,
                   id: place.id 
                 };
@@ -112,6 +111,9 @@ export const ChatAiTravel = () => {
 
               recommends.forEach((recommend, index) => {
                 let bubbleClass = 'chat-bubble-middle';
+                if(index === 0) {
+                  bubbleClass = 'chat-bubble'
+                }
                 if (index === recommends.length - 1) {
                   bubbleClass = 'chat-bubble-last';
                 }
@@ -135,7 +137,6 @@ export const ChatAiTravel = () => {
               setChats((prevChats) => [...prevChats, aiFixedResponse]);
 
               fixed_recommends.forEach((fixed_recommend, index) => {
-                {console.log(index)}
                 let bubbleClass = 'chat-bubble-middle';
                 if (index === fixed_recommends.length - 1) {
                   bubbleClass = 'chat-bubble-last';
@@ -226,8 +227,9 @@ export const ChatAiTravel = () => {
         <div className="text-wrapper">Chatbot travel plan</div>
         <img className="image" alt="Image" src="https://c.animaapp.com/wRSaELis/img/image-106@2x.png" />
         {loading && 
-          <div className="loading-image-container">
-            <img src={Spinner} alt="로딩"/>
+          <div className="loading-container">
+            <img src={Loading} alt="로딩중" style={{zIndex:"1000"}}/>
+            <div className="loaging-text">✈️여행정보를 찾는 중...✈️</div>
           </div>}
         <div className="chat-content">
           {chats.map((chat, index) => (
@@ -244,7 +246,7 @@ export const ChatAiTravel = () => {
               )
           )
           )}
-          <div ref={chatEndRef} style={{ marginBottom: '80px' }} />
+          <div ref={chatEndRef}/>
         </div>
       </div>
       

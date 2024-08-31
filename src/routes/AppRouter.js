@@ -57,7 +57,7 @@ const AnimatedRoutes = () => {
                 <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />  
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />
                 <Route path="/travel-make-final" element={<PageTransition><TravelMakeFInal /></PageTransition>} />
-                <Route path="/100" element={<PageTransition><ChatAiTravel /></PageTransition>} />
+                <Route path="/aichat" element={<PageTransition><ChatAiTravel /></PageTransition>} />
             </Routes>
         </AnimatePresence>
     );

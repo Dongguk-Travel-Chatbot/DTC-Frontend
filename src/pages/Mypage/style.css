@@ -67,20 +67,6 @@
   width: 288px;
 }
 
-.mypage .text-wrapper {
-  color: var(--lightgray-10);
-  font-family: "Gmarket Sans TTF-Bold", Helvetica;
-  font-size: 24px;
-  font-weight: 700;
-  height: 22px;
-  left: 89px;
-  letter-spacing: 0.25px;
-  line-height: 18px;
-  position: absolute;
-  top: 32px;
-  width: 124px;
-}
-
 .mypage .my-trip-button {
   height: 86px;
   left: 45px;
@@ -95,12 +81,11 @@
   font-size: 24px;
   font-weight: 700;
   height: 18px;
-  left: 93px;
+  left: 82px;
   letter-spacing: 0.25px;
-  line-height: 18px;
+  top: 35%;
+  width: 50%;
   position: absolute;
-  top: 34px;
-  width: 123px;
 }
 
 .mypage .scrap-button {
@@ -117,11 +102,11 @@
   font-size: 24px;
   font-weight: 700;
   height: 18px;
-  left: 54px;
+  left: 53.5px;
   letter-spacing: 0.25px;
   line-height: 18px;
   position: absolute;
-  top: 34px;
+  top: 32px;
   width: 181px;
 }
 

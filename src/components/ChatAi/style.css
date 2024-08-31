@@ -27,7 +27,7 @@
   border: 1px solid;
   border-color: var(--g-grey-inactive);
   border-radius: 0px 20px 20px 0px;
-  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  padding: 10px 10px; /* 텍스트와 말풍선 사이의 여백 */
   max-width: 250px; /* 말풍선의 최대 너비 */
   word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
   margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
@@ -40,7 +40,7 @@
   border: 1px solid;
   border-color: var(--g-grey-inactive);
   border-radius: 0px 20px 20px 20px;
-  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  padding: 10px 10px; /* 텍스트와 말풍선 사이의 여백 */
   max-width: 250px; /* 말풍선의 최대 너비 */
   word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
   margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
@@ -66,7 +66,7 @@
   border: 1px solid;
   border-color: var(--g-grey-inactive);
   border-radius: 0px 20px 20px 20px;
-  padding: 10px 17px; /* 텍스트와 말풍선 사이의 여백 */
+  padding: 10px 10px; /* 텍스트와 말풍선 사이의 여백 */
   max-width: 250px; /* 말풍선의 최대 너비 */
   word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
   margin-left: 35px; /* 아이콘과 말풍선 사이의 여백 */
