@@ -16,6 +16,12 @@ import { HotCommunity } from "src/pages/HotCommunity";
 import { PostDetails } from "src/pages/TravelCommunityInfo";
 import { TravelClip } from "src/pages/TravelClip";
 import { ChatAiTravel } from "src/pages/ChatAiTravel";
+import { TravelMakeBasic } from "src/pages/TravelMakeBasic";
+import { Travelmakecallender1 } from "src/pages/Travelmakecallender1/Travelmakecallender1";
+import { Travelmakecallender2 } from "src/pages/Travelmakecallender2/Travelmakecallender2";
+import { Travelmakecallender3 } from "src/pages/Travelmakecallender3/Travelmakecallender3";
+import { TravelMakeMember } from "src/pages/TravelMakeMember";
+import { TravelMakeFInal } from "src/pages/TravelMakeFInal";
 
 export const AppRouter = () => {
 
@@ -38,6 +44,12 @@ export const AppRouter = () => {
           <Route path='/hotCommunity' element={<HotCommunity />} />
           <Route path='/free-post' element={<FreePost />} />
           <Route path="/post-details/:category/:id" element={<PostDetails />} />
+          <Route path="/travel-make-basic" element={<TravelMakeBasic />} />
+          <Route path="/travel-callender1" element={<Travelmakecallender1 />} />
+          <Route path="/travel-callender2" element={<Travelmakecallender2 />} />
+          <Route path="/travel-callender3" element={<Travelmakecallender3 />} />
+          <Route path="/travel-make-member" element={<TravelMakeMember />} />
+          <Route path="/travel-make-final" element={<TravelMakeFInal />} />
           <Route path="/100" element={<ChatAiTravel />} />
         </Routes>
       </BrowserRouter>

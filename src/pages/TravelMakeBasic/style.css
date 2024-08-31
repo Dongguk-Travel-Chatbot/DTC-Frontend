@@ -1,0 +1,50 @@
+.travel-make-basic {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.travel-make-basic .img {
+  height: 390px;
+  left: 6px;
+  object-fit: cover;
+  position: absolute;
+  top: 155px;
+  width: 363px;
+}
+
+.travel-make-basic .text-wrapper-travel {
+  color: var(--light-primary);
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 28px;
+  left: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 102px;
+  width: 280px;
+}
+
+.travel-make-basic .div {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 16px;
+  font-weight: 300;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  text-align: center;
+  top: 569px;
+  width: 356px;
+}
+
+.travel-make-basic .next-button-instance {
+  left: 29px !important;
+  position: absolute !important;
+  top: 701px !important;
+}

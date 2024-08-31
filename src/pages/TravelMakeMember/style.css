@@ -1,0 +1,249 @@
+.travel-make-member {
+  background-color: #ffffff;
+  height: 812px;
+  position: relative;
+  width: 375px;
+}
+
+.travel-make-member .date-rectangle-group {
+  height: 59px;
+  left: 23px;
+  position: absolute;
+  top: 152px;
+  width: 333px;
+}
+
+.travel-make-member .overlap-group {
+  background-image: url(https://c.animaapp.com/ePuwurhV/img/daterectangle@2x.png);
+  background-size: 100% 100%;
+  height: 59px;
+  position: relative;
+  width: 329px;
+}
+
+.travel-make-member .text-wrapper-mem {
+  color: #bcbcbc;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  width: 46px;
+}
+
+.travel-make-member .div {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 14px;
+  font-weight: 700;
+  left: 139px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: right;
+  top: 23px;
+  width: 176px;
+}
+
+.travel-make-member .adult-selector {
+  height: 56px;
+  left: 45px;
+  position: absolute;
+  top: 265px;
+  width: 289px;
+}
+
+.travel-make-member .line-separate-human {
+  height: 2px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 54px;
+  width: 286px;
+}
+
+.travel-make-member .text-wrapper-2 {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  height: 20px;
+  left: 0;
+  letter-spacing: -0.2px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 101px;
+}
+
+.travel-make-member .div-2 {
+  color: #a1a1a1;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  height: 16px;
+  left: 0;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 29px;
+  white-space: nowrap;
+  width: 70px;
+}
+
+.travel-make-member .span {
+  letter-spacing: -0.03px;
+}
+
+.travel-make-member .text-wrapper-3 {
+  font-size: 24px;
+  letter-spacing: -0.05px;
+}
+
+.travel-make-member .amount {
+  align-items: center;
+  border: 0.7px solid;
+  border-color: var(--text-30);
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  left: 181px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.travel-make-member .img {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.travel-make-member .adult-number {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: 24px;
+  justify-content: center;
+  position: relative;
+  width: 24px;
+}
+
+.travel-make-member .text-wrapper-4 {
+  color: var(--text-60);
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 19.2px;
+  position: relative;
+  text-align: right;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.travel-make-member .adult-selector-2 {
+  height: 56px;
+  left: 45px;
+  position: absolute;
+  top: 355px;
+  width: 289px;
+}
+
+.travel-make-member .adult-selector-3 {
+  height: 56px;
+  left: 45px;
+  position: absolute;
+  top: 445px;
+  width: 289px;
+}
+
+.travel-make-member .adult-selector-4 {
+  height: 56px;
+  left: 45px;
+  position: absolute;
+  top: 535px;
+  width: 289px;
+}
+
+.travel-make-member .text-wrapper-5 {
+  color: #a1a1a1;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 15px;
+  font-weight: 300;
+  height: 17px;
+  left: 0;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 29px;
+  white-space: nowrap;
+}
+
+.travel-make-member .dot {
+  height: 8px;
+  left: 162px;
+  position: absolute;
+  top: 645px;
+  width: 50px;
+}
+
+.travel-make-member .pagination-active {
+  background-color: #0002ff;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 21px;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-member .pagination-deactive {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-member .pagination-deactive-2 {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 42px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travel-make-member .text-wrapper-6 {
+  color: var(--light-primary);
+  font-family: "Gmarket Sans TTF-Bold", Helvetica;
+  font-size: 24px;
+  font-weight: 700;
+  height: 28px;
+  left: 19px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 106px;
+  width: 222px;
+}
+
+.travel-make-member .next-button-instance {
+  left: 29px !important;
+  position: absolute !important;
+  top: 701px !important;
+}
