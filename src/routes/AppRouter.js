@@ -22,6 +22,7 @@ import { Travelmakecallender2 } from "src/pages/Travelmakecallender2/Travelmakec
 import { Travelmakecallender3 } from "src/pages/Travelmakecallender3/Travelmakecallender3";
 import { TravelMakeMember } from "src/pages/TravelMakeMember";
 import { TravelMakeFInal } from "src/pages/TravelMakeFInal";
+import { TestPage } from "src/pages/test";
 
 export const AppRouter = () => {
 
@@ -51,6 +52,7 @@ export const AppRouter = () => {
           <Route path="/travel-make-member" element={<TravelMakeMember />} />
           <Route path="/travel-make-final" element={<TravelMakeFInal />} />
           <Route path="/100" element={<ChatAiTravel />} />
+          <Route path="/1000" element={<TestPage />} />
         </Routes>
       </BrowserRouter>
     );

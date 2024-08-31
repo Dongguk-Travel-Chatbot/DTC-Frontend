@@ -1,8 +1,9 @@
 import React from "react";
 import "./style.css";
-import TravelMakeBasicImage from "src/assets/TravelMakeBasicImage.svg"
+import TravelMakeBasicImage from "src/assets/TravelMakeBasicImage.svg";
 import { PageHeader } from "src/components/PageHeader";
 import { NextButton } from "src/components/NextButton";
+import { useNavigate } from "react-router-dom"; // 수정된 부분
 
 export const TravelMakeBasic = () => {
   
@@ -10,6 +11,11 @@ export const TravelMakeBasic = () => {
     pageTitle: "",
     backIcon: true,
     writeIcon: false
+  };
+
+  const navigate = useNavigate(); // react-router-dom에서 가져오기
+  const handleClick = () => {
+    navigate("/travel-callender1"); // 특정 경로로 이동
   };
 
   return (
@@ -23,7 +29,7 @@ export const TravelMakeBasic = () => {
         여행의 기본정보를 입력해주세요.
       </p>
 
-      <NextButton className="next-button-instance" />
+      <NextButton className="next-button-instance" onClick={handleClick} /> {/* 수정된 부분 */}
     </div>
   );
 };
