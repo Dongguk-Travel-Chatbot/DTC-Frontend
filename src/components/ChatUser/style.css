@@ -1,15 +1,21 @@
 .chat-user {
   background-color: #ffffff;
-  border-color: var(--g-grey-inactive);
+  text-align: left; /* 사용자 채팅을 오른쪽 정렬 */
+  margin-bottom: 10px; /* 각 채팅 사이에 여유 공간 추가 */
+  display: flex;
+  justify-content: flex-end; /* 말풍선을 오른쪽에 위치 */
 }
 
 .chat-user .chat-bubble {
-  background-color: #cce5ff;
-  border: 1px solid;
-  border-color: var(--g-grey-inactive);
+  background-color: #262525;
+  color: #ffffff;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  border: 1px solid var(--g-grey-inactive);
   border-radius: 20px 20px 0px 20px;
-  height: 122px;
-  left: 36px;
-  top: 0;
-  width: 196px;
+  padding: 10px 15px; /* 텍스트와 말풍선 사이의 여백 */
+  max-width: 250px; /* 말풍선의 최대 너비 */
+  word-wrap: break-word; /* 긴 단어가 있을 경우 줄바꿈 */
+  margin-right: 10px; /* 오른쪽 여백 추가 */
+  align-self: flex-end; /* 말풍선을 오른쪽 끝에 고정 */
+  font-size: 12px;
 }
