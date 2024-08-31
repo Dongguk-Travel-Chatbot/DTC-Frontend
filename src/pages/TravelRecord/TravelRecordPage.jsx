@@ -32,17 +32,20 @@ export const TravelRecordPage = () => {
         reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
       />
 
-      {
-        records.map(function(record, i) {
-          return <TravelRecord className="travel-record-instance" props={record} key={i}/>
-        })
-      }
       <div className="travel-status">
         <div className="travel-record-2">
           <div className="text-wrapper-4">여행기록</div>
           <div className="travel-record-3" />
         </div>
         <div className="text-wrapper-5" onClick={()=>{navigate('/travel-plan')}}>여행계획</div>
+      </div>
+
+      <div className="overlap">
+        {
+          records.map(function(record, i) {
+            return <TravelRecord className="travel-record-instance" props={record} key={i}/>
+          })
+        }
       </div>
       
       <Footer className="footer-instance" overlapGroupClassName="design-component-instance-node" />

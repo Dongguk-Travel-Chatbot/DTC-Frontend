@@ -33,11 +33,14 @@ export const TravelPlanPage = () => {
         reactIconsFi="https://c.animaapp.com/x2g7jTEH/img/-moreinfoicons@2x.png"
       />
 
+      <div className="overlap">
       {
         plans.map(function(plan, i) {
           return <TravelPlan className="travel-plan-instance" props={plan} key={i}/>
         })
       }
+      </div>
+
       <div className="travel-status">
         <div className="text-wrapper-4" onClick={()=>{navigate('/travel-record')}}>여행기록</div>
         <div className="travel-plan-2">

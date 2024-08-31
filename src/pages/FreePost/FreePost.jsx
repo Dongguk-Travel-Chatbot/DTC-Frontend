@@ -74,7 +74,7 @@ export const FreePost = () => {
       localStorage.removeItem('postContent');
       setTitle("");
       setContent("");
-      navigate("/freeCommunity", { state: { newPost: response.data.success } });
+      navigate("/free-community", { state: { newPost: response.data.success } });
     } catch (error) {
       console.error("글쓰기 요청 실패:", error);
     }

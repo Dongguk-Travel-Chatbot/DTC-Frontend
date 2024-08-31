@@ -14,7 +14,7 @@ import { TravelPost } from "src/pages/TravelPost";
 import { FreePost } from "src/pages/FreePost";
 import { FreeCommunity } from "src/pages/FreeCommunity";
 import { HotCommunity } from "src/pages/HotCommunity";
-import { PostDetails } from "src/pages/TravelCommunityInfo";
+import { PostDetails } from "src/pages/PostDetails";
 import { TravelClip } from "src/pages/TravelClip";
 import { ChatAiTravel } from "src/pages/ChatAiTravel";
 import { TravelMakeBasic } from "src/pages/TravelMakeBasic";
@@ -24,7 +24,7 @@ import { Travelmakecallender3 } from "src/pages/Travelmakecallender3/Travelmakec
 import { TravelMakeMember } from "src/pages/TravelMakeMember";
 import { TravelMakeFInal } from "src/pages/TravelMakeFInal";
 import { AnimatePresence, motion } from "framer-motion";
-import { TravelDetailCreate } from "src/pages/TravelDetail";
+import { TravelDetailCreate } from "src/pages/TravelDetailCreate";
 
 const AnimatedRoutes = () => {
     const location = useLocation();

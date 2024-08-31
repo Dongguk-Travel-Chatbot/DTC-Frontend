@@ -75,6 +75,9 @@ export const PostDetails = () => {
         const data = response.data.data;
         const { date, time } = changeLocalDateTime(data.postTime);
 
+        console.log(data);
+        console.log(1);
+
         setTravel(data.travel);
         setUser(data.user);
         setData(data);
@@ -126,7 +129,9 @@ export const PostDetails = () => {
             </div>
           </div>
         </div>
-        <TravelRecord className="travel-record-instance" props={travel} />
+        {
+          category == "travel" || category == "hot" ? <TravelRecord className="travel-record-instance" props={travel} /> : null          
+        }
 
         <div className="post-title">
           <div className="text-wrapper-20">{data.title}</div>

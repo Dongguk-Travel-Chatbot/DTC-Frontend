@@ -99,7 +99,7 @@ export const TravelPost = () => {
       localStorage.removeItem('postContent');
       setTitle("");
       setContent("");
-      navigate("/travelcommunity", { state: { newPost: response.data.success } });
+      navigate("/travel-community", { state: { newPost: response.data.success } });
     } catch (error) {
       console.error("글쓰기 요청 실패:", error);
     }

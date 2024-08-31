@@ -5,9 +5,19 @@
   width: 375px;
 }
 
+.travel-plan-screen .overlap {
+  background-color: #ffffff;
+  height: 600px;
+  left: 0;
+  position: absolute;
+  top: 128px;
+  width: 375px;
+  overflow-y: auto;
+}
+
 .travel-plan-screen .travel-plan-instance {
   left: 20px !important;
-  top: 135px ;
+  top: 10px ;
 }
 
 .travel-plan-screen .travel-status {
