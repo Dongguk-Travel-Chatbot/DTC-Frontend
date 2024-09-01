@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { instance } from "src/apis/axios";
 
 export const KakaoMap = () => {
-
   const [title, setTitle] = useState("");
   const [thema, setThema] = useState("");
   const [address, setAddress] = useState("");
@@ -19,10 +18,10 @@ export const KakaoMap = () => {
     try {
       const response = await instance.get(`/api/record/${detailId}`, {
         headers: {
-          Authorization: `Bearer ${localStorage.getItem('token')}`,
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
       });
-      
+
       // 응답이 올 때까지 기다린 후 데이터 설정
       const data = response.data.data;
       setTitle(data.title);
@@ -30,7 +29,7 @@ export const KakaoMap = () => {
       setAddress(data.address);
       setLat(data.lat);
       setLon(data.lon);
-      
+
       setLoading(false); // 데이터 로드가 완료되면 로딩 상태를 false로 변경
     } catch (error) {
       console.error("여행 상세정보를 불러오는 중 에러 발생:", error);
@@ -64,14 +63,34 @@ export const KakaoMap = () => {
         }} // 지도 크기
         level={4} // 지도 확대 레벨
       >
-        <MapMarker position={{ lat: lat, lng: lon }}> 미스터 혼밥왕 </MapMarker>
+        <MapMarker
+          position={{ lat: lat, lng: lon }}
+          image={{
+            src: "https://w7.pngwing.com/pngs/96/889/png-transparent-marker-map-interesting-places-the-location-on-the-map-the-location-of-the-thumbnail.png", // 마커 이미지 URL
+            size: {
+              width: 24,
+              height: 35,
+            }, // 마커 이미지 크기
+            options: {
+              offset: {
+                x: 12,
+                y: 35,
+              }, // 마커의 좌표에 이미지의 어느 지점을 맞출지 설정
+            },
+          }}
+        >
+        </MapMarker>
       </Map>
 
       <div className="place-info-rectangle">
         <div className="overlap-group">
           <div className="text-wrapper-2">{title}</div>
           <div className="text-wrapper">{thema}</div>
-          <img className="map-pin" alt="Map pin" src="https://c.animaapp.com/UNzHWVqf/img/map-pin@2x.png" />
+          <img
+            className="map-pin"
+            alt="Map pin"
+            src="https://c.animaapp.com/UNzHWVqf/img/map-pin@2x.png"
+          />
           <p className="div">{address}</p>
         </div>
       </div>
