@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const instance = axios.create({
   baseURL: process.env.REACT_APP_BASE_URL,
-  timeout: 30000,
+  timeout: 70000,
   headers: {
     "Content-Type": "application/json",
   },
