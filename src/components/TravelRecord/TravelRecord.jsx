@@ -13,7 +13,7 @@ export const TravelRecord = ({ className, props }) => {
   return (
     <div className={`travel-record ${className}`} onClick={()=>{navigate("/record-detail/" + props.travel_record_id)}}>
       {console.log(props)}
-        <div className="travel-image" />
+          <img  className="travel-image" src = {props.image_url}/>
         <div className="div">
           <div className="travel-title">
             <p className="p">
