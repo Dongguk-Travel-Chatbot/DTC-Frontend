@@ -1,13 +1,42 @@
 body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f2f2f2;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.chat-AI-travel,
+.community,
+.free-community,
+.free-post,
+.hot-community,
+.kakaomap,
+.login,
+.main,
+.my-page-edit,
+.post-details,
+.sign-up,
+.travel-community,
+.travel-detail,
+.travel-make-basic,
+.travelmakecallender-screen,
+.travelmakecallender-wrapper,
+.travelmakecallender,
+.travel-make-final,
+.travel-make-member,
+.travel-plan-screen,
+.travel-post,
+.travel-record-screen {
+  margin-left: auto;
+  margin-right: auto;
 }
