@@ -1,15 +1,20 @@
 import React from "react";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export const RecordDetail = ({ className, props }) => {
 
+  const navigate = useNavigate();
+  const detailId = props.id;
   const date = new Date(props.start_at);
   const hours = date.getHours().toString().padStart(2, '0');
   const minutes = date.getMinutes().toString().padStart(2, '0');
   const timeString = `${hours}:${minutes}`;
 
+  console.log(props);
+
   return (
-    <div className={`record-detail ${className}`}>
+    <div className={`record-detail ${className}`} onClick={()=>{navigate("/kakaomap" + "/" + detailId)}}>
       <div className="text-wrapper-record-detail">{timeString}</div>
       <div className="record-detail-box">
         <div className="overlap-group">

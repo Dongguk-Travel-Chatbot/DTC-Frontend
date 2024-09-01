@@ -270,9 +270,9 @@
 
 .post-details .post-comment-frame {
   background-color: #ffffff;
+  top: 746px;
   height: 66px;
-  left: 0;
-  position: fixed;
+  position: absolute;
   bottom: 0px;
   width: 375px;
 }
