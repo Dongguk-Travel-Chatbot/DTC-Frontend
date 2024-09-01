@@ -46,15 +46,15 @@ const AnimatedRoutes = () => {
                 <Route path='/travel-clip' element={<TravelClip />} />
                 <Route path='/free-post' element={<FreePost />} />
                 <Route path='/community' element={<Community />} />
+                <Route path="/travel-callender1" element={<Travelmakecallender1 />} />  
                 <Route path="/travel-callender2" element={<Travelmakecallender2 />} />
                 <Route path="/travel-callender3" element={<Travelmakecallender3 />} />
-
                 {/* 애니메이션 적용 경로 */}
                 <Route path='/free-community' element={<PageTransition><FreeCommunity /></PageTransition>} />
                 <Route path='/hot-community' element={<PageTransition><HotCommunity /></PageTransition>} />
                 <Route path='/travel-community' element={<PageTransition><TravelCommunity /></PageTransition>} />
                 <Route path="/travel-make-basic" element={<PageTransition><TravelMakeBasic /></PageTransition>} />
-                <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />  
+                {/* <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />   */}
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />
                 <Route path="/travel-make-final" element={<PageTransition><TravelMakeFInal /></PageTransition>} />
                 <Route path="/post-details/:category/:id" element={<PageTransition><PostDetails /></PageTransition>} />

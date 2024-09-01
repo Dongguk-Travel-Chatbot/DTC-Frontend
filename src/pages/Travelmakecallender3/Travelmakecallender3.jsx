@@ -9,8 +9,8 @@ import { useNavigate } from "react-router-dom";
 import { instance } from "src/apis/axios";
 
 export const Travelmakecallender3 = () => {
-  const [departDate, setDepartDate] = useState("2024-08-16");
-  const [arriveDate, setArriveDate] = useState("2024-08-18");
+  const [departDate, setDepartDate] = useState("2024-09-19");
+  const [arriveDate, setArriveDate] = useState("2024-09-21");
   const [errorMessage, setErrorMessage] = useState(null);
   const navigate = useNavigate();
 
@@ -60,7 +60,7 @@ export const Travelmakecallender3 = () => {
 
       <div className="text-wrapper-cal1">여행날짜는 언제인가요?</div>
       <div className="month-selector">
-        <div className="div">October 2024</div>
+        <div className="div">September 2024</div>
       </div>
       <img className="arrows" alt="Arrows" src={Arrows} />
       <div className="overlap-group">
@@ -89,151 +89,47 @@ export const Travelmakecallender3 = () => {
             </div>
           </div>
           <div className="frame-4">
-            <Frame className="frame-119" text="" />
-            <Frame className="frame-119" text="" />
-            <Frame className="frame-119" text="" />
             <Frame className="frame-119" text="1" />
             <Frame className="frame-119" text="2" />
             <Frame className="frame-119" text="3" />
             <Frame className="frame-119" text="4" />
+            <Frame className="frame-119" text="5" />
+            <Frame className="frame-119" text="6" />
+            <Frame className="frame-119" text="7" />
           </div>
           <div className="frame-4">
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">5</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">6</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">7</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">8</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">9</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">10</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">11</div>
-              </div>
-            </div>
+            <Frame className="frame-119" text="8" />
+            <Frame className="frame-119" text="9" />
+            <Frame className="frame-119" text="10" />
+            <Frame className="frame-119" text="11" />
+            <Frame className="frame-119" text="12" />
+            <Frame className="frame-119" text="13" />
+            <Frame className="frame-119" text="14" />
           </div>
           <div className="frame-4">
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">12</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">13</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">14</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">15</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">16</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">17</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">18</div>
-              </div>
-            </div>
+            <Frame className="frame-119" text="15" />
+            <Frame className="frame-119" text="16" />
+            <Frame className="frame-119" text="17" />
+            <Frame className="frame-119" text="18" />
+            <Frame className="frame-119" text="19" />
+            <Frame className="frame-119" text="20" />
+            <Frame className="frame-119" text="21" />
           </div>
           <div className="frame-4">
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">19</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">20</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">21</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">22</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">23</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">24</div>
-              </div>
-            </div>
-            <div className="frame-wrapper">
-              <div className="div-wrapper">
-                <div className="SU-2">25</div>
-              </div>
-            </div>
+            <Frame className="frame-119" text="22" />
+            <Frame className="frame-119" text="23" />
+            <Frame className="frame-119" text="24" />
+            <Frame className="frame-119" text="25" />
+            <Frame className="frame-119" text="26" />
+            <Frame className="frame-119" text="27" />
+            <Frame className="frame-119" text="28" />
           </div>
-          <div className="frame-5">
-            <div className="frame-6">
-              <div className="div-wrapper">
-                <div className="SU-2">26</div>
-              </div>
-            </div>
-            <div className="frame-6">
-              <div className="div-wrapper">
-                <div className="SU-2">27</div>
-              </div>
-            </div>
-            <div className="frame-6">
-              <div className="div-wrapper">
-                <div className="SU-2">28</div>
-              </div>
-            </div>
-            <div className="frame-6">
-              <div className="div-wrapper">
-                <div className="SU-2">29</div>
-              </div>
-            </div>
-            <div className="frame-6">
-              <div className="div-wrapper">
-                <div className="SU-2">30</div>
-              </div>
-            </div>
+          <div className="frame-4">
+            <Frame className="frame-119" text="29" />
+            <Frame className="frame-119" text="30" />
+          </div>
+          <div className="frame-4">
+
             <div className="frame-6">
               <div className="div-wrapper">
                 <div className="SU-2">{""}</div>

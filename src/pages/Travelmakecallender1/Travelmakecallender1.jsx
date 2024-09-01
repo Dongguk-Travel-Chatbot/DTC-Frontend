@@ -31,7 +31,7 @@ export const Travelmakecallender1 = () => {
       </div>
       <div className="text-wrapper-3">여행날짜는 언제인가요?</div>
       <div className="month-selector-2">
-        <div className="text-wrapper-4">October 2024</div>
+        <div className="text-wrapper-4">September 2024</div>
       </div>
       <img className="arrows-2" alt="Arrows" src={Arrows} />
       <div className="callender-2">
@@ -59,30 +59,15 @@ export const Travelmakecallender1 = () => {
           </div>
         </div>
         <div className="frame-11">
-          <Frame className="frame-instance" text="" />
-          <Frame className="frame-instance" text="" />
-          <Frame className="frame-instance" text="" />
           <Frame className="frame-instance" text="1" />
           <Frame className="frame-instance" text="2" />
           <Frame className="frame-instance" text="3" />
           <Frame className="frame-instance" text="4" />
+          <Frame className="frame-instance" text="5" />
+          <Frame className="frame-instance" text="6" />
+          <Frame className="frame-instance" text="7" />
         </div>
         <div className="frame-11">
-          <div className="frame-12">
-            <div className="frame-9">
-              <div className="SU-3">5</div>
-            </div>
-          </div>
-          <div className="frame-12">
-            <div className="frame-9">
-              <div className="SU-3">6</div>
-            </div>
-          </div>
-          <div className="frame-12">
-            <div className="frame-9">
-              <div className="SU-3">7</div>
-            </div>
-          </div>
           <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">8</div>
@@ -103,8 +88,6 @@ export const Travelmakecallender1 = () => {
               <div className="SU-3">11</div>
             </div>
           </div>
-        </div>
-        <div className="frame-11">
           <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">12</div>
@@ -120,6 +103,8 @@ export const Travelmakecallender1 = () => {
               <div className="SU-3">14</div>
             </div>
           </div>
+        </div>
+        <div className="frame-11">
           <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">15</div>
@@ -127,7 +112,7 @@ export const Travelmakecallender1 = () => {
           </div>
           <div className="frame-12">
             <div className="frame-9">
-              <div className="SU-3" onClick={handleClick}>16</div>
+              <div className="SU-3">16</div>
             </div>
           </div>
           <div className="frame-12">
@@ -140,11 +125,9 @@ export const Travelmakecallender1 = () => {
               <div className="SU-3">18</div>
             </div>
           </div>
-        </div>
-        <div className="frame-11">
           <div className="frame-12">
             <div className="frame-9">
-              <div className="SU-3">19</div>
+              <div className="SU-3" onClick={handleClick}>19</div>
             </div>
           </div>
           <div className="frame-12">
@@ -157,6 +140,8 @@ export const Travelmakecallender1 = () => {
               <div className="SU-3">21</div>
             </div>
           </div>
+        </div>
+        <div className="frame-11">
           <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">22</div>
@@ -177,23 +162,23 @@ export const Travelmakecallender1 = () => {
               <div className="SU-3">25</div>
             </div>
           </div>
-        </div>
-        <div className="frame-13">
-          <div className="frame-14">
+          <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">26</div>
             </div>
           </div>
-          <div className="frame-14">
+          <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">27</div>
             </div>
           </div>
-          <div className="frame-14">
+          <div className="frame-12">
             <div className="frame-9">
               <div className="SU-3">28</div>
             </div>
           </div>
+        </div>
+        <div className="frame-13">
           <div className="frame-14">
             <div className="frame-9">
               <div className="SU-3">29</div>
@@ -202,6 +187,21 @@ export const Travelmakecallender1 = () => {
           <div className="frame-14">
             <div className="frame-9">
               <div className="SU-3">30</div>
+            </div>
+          </div>
+          <div className="frame-14">
+            <div className="frame-9">
+              <div className="SU-3"></div>
+            </div>
+          </div>
+          <div className="frame-14">
+            <div className="frame-9">
+              <div className="SU-3"></div>
+            </div>
+          </div>
+          <div className="frame-14">
+            <div className="frame-9">
+              <div className="SU-3"></div>
             </div>
           </div>
           <div className="frame-14">
