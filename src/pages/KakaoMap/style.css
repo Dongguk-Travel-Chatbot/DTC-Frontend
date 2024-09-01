@@ -1,0 +1,82 @@
+.kakaomap {
+    background-color: #ffffff;
+    height: 812px;
+    position: relative;
+    width: 375px;
+}
+
+.kakaomap .page-header-instance {
+   left: 0px !important;
+   position: absolute !important;
+   top: 1px !important;
+ }
+
+
+.kakaomap .place-info-rectangle {
+  height: 106px;
+  left: 24px;
+  position: absolute;
+  top: 650px;
+  width: 333px;
+  z-index: 10;
+}
+
+.kakaomap .overlap-group {
+  background-color: #ffffff;
+  border-radius: 16px;
+  height: 108px;
+  left: -1px;
+  position: relative;
+  top: -1px;
+  width: 329px;
+}
+
+.kakaomap .text-wrapper {
+  color: #0d0d0d;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 13px;
+  font-weight: 300;
+  height: 20px;
+  left: 24px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 45px;
+  width: 100px;
+}
+
+.kakaomap .map-pin {
+  height: 14px;
+  left: 24px;
+  position: absolute;
+  top: 74px;
+  width: 14px;
+}
+
+.kakaomap .div {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Light", Helvetica;
+  font-size: 14px;
+  font-weight: 300;
+  height: 28px;
+  left: 43px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 73px;
+  width: 230px;
+}
+
+.kakaomap .text-wrapper-2 {
+  color: #000000;
+  font-family: "Gmarket Sans TTF-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  height: 17px;
+  left: 24px;
+  letter-spacing: -0.2px;
+  line-height: normal;
+  position: absolute;
+  top: 20px;
+  width: 120px;
+}

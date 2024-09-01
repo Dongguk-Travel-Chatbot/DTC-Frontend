@@ -25,6 +25,7 @@ import { TravelMakeMember } from "src/pages/TravelMakeMember";
 import { TravelMakeFInal } from "src/pages/TravelMakeFInal";
 import { AnimatePresence, motion } from "framer-motion";
 import { TravelDetailCreate } from "src/pages/TravelDetailCreate";
+import { KakaoMap } from "src/pages/KakaoMap";
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -45,21 +46,21 @@ const AnimatedRoutes = () => {
                 <Route path='/travel-post' element={<TravelPost />} />
                 <Route path='/travel-clip' element={<TravelClip />} />
                 <Route path='/free-post' element={<FreePost />} />
-                <Route path='/community' element={<Community />} />
-                <Route path="/travel-callender1" element={<Travelmakecallender1 />} />  
+                <Route path='/community' element={<Community />} /> 
                 <Route path="/travel-callender2" element={<Travelmakecallender2 />} />
                 <Route path="/travel-callender3" element={<Travelmakecallender3 />} />
+                <Route path="/aichat" element={<ChatAiTravel />} />
                 {/* 애니메이션 적용 경로 */}
                 <Route path='/free-community' element={<PageTransition><FreeCommunity /></PageTransition>} />
                 <Route path='/hot-community' element={<PageTransition><HotCommunity /></PageTransition>} />
                 <Route path='/travel-community' element={<PageTransition><TravelCommunity /></PageTransition>} />
                 <Route path="/travel-make-basic" element={<PageTransition><TravelMakeBasic /></PageTransition>} />
-                {/* <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} />   */}
+                <Route path="/travel-callender1" element={<PageTransition><Travelmakecallender1 /></PageTransition>} /> 
                 <Route path="/travel-make-member" element={<PageTransition><TravelMakeMember /></PageTransition>} />
                 <Route path="/travel-make-final" element={<PageTransition><TravelMakeFInal /></PageTransition>} />
                 <Route path="/post-details/:category/:id" element={<PageTransition><PostDetails /></PageTransition>} />
                 <Route path="/record-detail/:travelId" element={<PageTransition><TravelDetailCreate /></PageTransition>} />
-                <Route path="/aichat" element={<PageTransition><ChatAiTravel /></PageTransition>} />
+                <Route path="/kakaomap/:detailId" element={<PageTransition><KakaoMap /></PageTransition>} />
             </Routes>
         </AnimatePresence>
     );
