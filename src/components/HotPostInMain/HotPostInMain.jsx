@@ -51,7 +51,7 @@ export const HotPostInMain = ({ className }) => {
     <div className={`hot-post-in-main ${className}`}>
       {topPosts.map((post, index) => (
         <div key={index} className="hot-post-item" onClick={()=>{navigate("/post-details/hot/" + post.post_id)}}>
-          <img src="https://th.bing.com/th/id/OIP.ipFdmKnqrY13gld80j2nEwHaEK?w=322&h=181&c=7&r=0&o=5&pid=1.7" alt={post.title} className="location-image" />
+          <img src={post.image_url} alt={post.title} className="location-image" />
           <div className="text-container">
             <div className="text-wrapper">{post.title}</div>
             <div className="location">

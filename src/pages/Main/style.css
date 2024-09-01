@@ -83,8 +83,8 @@
 
 .main .hot-post-in-main-instance {
   left: 8px !important;
-  top: -8px;
   position: relative !important;
+  gap: 6px;
 }
 
 .main .bottom-row{
