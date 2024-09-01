@@ -15,7 +15,7 @@ export const TravelPlan = ({ className, props }) => {
 
   return (
     <div className={`travel-plan ${className}`}>
-      <div className="travel-image" />
+      <img className="travel-image" src={props.image_url}/>
       <div className="div">
         <div className="travel-title">
           <p className="p">
