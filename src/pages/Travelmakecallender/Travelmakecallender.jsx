@@ -70,7 +70,7 @@ export const Travelmakecallender = () => {
   const theme = {
     color: {
       pink: "#ffd5eb",
-      brown: "#8b4513",
+      brown: "#000000", //달력 전체 색
       blue: "#d4e4ff",
       white: "white",
     },
