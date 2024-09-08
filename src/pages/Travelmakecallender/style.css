@@ -1,11 +1,12 @@
-.travelmakecallender {
+.travelmakecallender-wrapper {
   background-color: #ffffff;
   height: 812px;
   position: relative;
   width: 375px;
+  
 }
 
-.travelmakecallender .text-wrapper-cal1 {
+.travelmakecallender-wrapper .text-wrapper-6 {
   color: var(--light-primary);
   font-family: "Gmarket Sans TTF-Bold", Helvetica;
   font-size: 24px;
@@ -16,11 +17,51 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 106px;
+  top: 80px;
   width: 262px;
 }
 
-.travelmakecallender .month-selector {
+.travelmakecallender-wrapper .dot-3 {
+  height: 8px;
+  left: 162px;
+  position: absolute;
+  top: 645px;
+  width: 50px;
+}
+
+.travelmakecallender-wrapper .pagination-active-3 {
+  background-color: #0002ff;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-wrapper .pagination-deactive-5 {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 42px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-wrapper .pagination-deactive-6 {
+  background-color: #1e1e1e;
+  border-radius: 4.21px;
+  height: 8px;
+  left: 21px;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 8px;
+}
+
+.travelmakecallender-wrapper .month-selector-3 {
   height: 28px;
   left: 19px;
   position: absolute;
@@ -28,7 +69,7 @@
   width: 193px;
 }
 
-.travelmakecallender .div {
+.travelmakecallender-wrapper .text-wrapper-7 {
   color: #252525b2;
   font-family: "Gmarket Sans TTF-Bold", Helvetica;
   font-size: 20px;
@@ -43,7 +84,7 @@
   width: 191px;
 }
 
-.travelmakecallender .arrows {
+.travelmakecallender-wrapper .arrows-3 {
   height: 13px;
   left: 312px;
   position: absolute;
@@ -51,7 +92,7 @@
   width: 41px;
 }
 
-.travelmakecallender .overlap-group {
+.travelmakecallender-wrapper .overlap-group-2 {
   height: 302px;
   left: 15px;
   position: absolute;
@@ -59,19 +100,19 @@
   width: 346px;
 }
 
-.travelmakecallender .callender {
+.travelmakecallender-wrapper .callender-3 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
   gap: 2px;
   height: 302px;
-  left: 0;
+  left: 10px;
   position: absolute;
-  top: 0;
+  top: 150px;
   width: 346px;
 }
 
-.travelmakecallender .frame-2 {
+.travelmakecallender-wrapper .frame-16 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -80,9 +121,9 @@
   width: 100%;
 }
 
-.travelmakecallender .div-wrapper {
+.travelmakecallender-wrapper .frame-17 {
   align-items: center;
-  background-color: #ffffff;
+  background-color: #c8d9f6;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -93,7 +134,7 @@
   width: 50px;
 }
 
-.travelmakecallender .text-wrapper-2 {
+.travelmakecallender-wrapper .text-wrapper-8 {
   color: #a1a1a1;
   font-family: "Roboto", Helvetica;
   font-size: 14px;
@@ -105,7 +146,7 @@
   width: fit-content;
 }
 
-.travelmakecallender .frame-3 {
+.travelmakecallender-wrapper .frame-18 {
   align-items: center;
   background-color: #ffffff;
   display: flex;
@@ -119,7 +160,7 @@
   width: 50px;
 }
 
-.travelmakecallender .frame-4 {
+.travelmakecallender-wrapper .frame-19 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -127,11 +168,11 @@
   position: relative;
 }
 
-.travelmakecallender .frame-119 {
+.travelmakecallender-wrapper .frame-119-instance {
   flex: 0 0 auto !important;
 }
 
-.travelmakecallender .frame-wrapper {
+.travelmakecallender-wrapper .frame-20 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -139,7 +180,7 @@
   position: relative;
 }
 
-.travelmakecallender .SU-2 {
+.travelmakecallender-wrapper .SU-4 {
   color: #000000;
   font-family: "Roboto", Helvetica;
   font-size: 14px;
@@ -151,7 +192,7 @@
   width: fit-content;
 }
 
-.travelmakecallender .frame-5 {
+.travelmakecallender-wrapper .frame-21 {
   align-items: flex-start;
   display: flex;
   height: 42px;
@@ -159,7 +200,7 @@
   width: 346px;
 }
 
-.travelmakecallender .frame-6 {
+.travelmakecallender-wrapper .frame-22 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -168,7 +209,7 @@
   position: relative;
 }
 
-.travelmakecallender .frame-7 {
+.travelmakecallender-wrapper .frame-23 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -178,23 +219,7 @@
   position: relative;
 }
 
-.travelmakecallender .select-button {
-  height: 40px;
-  left: 305px;
-  position: absolute;
-  top: 161px;
-  width: 40px;
-}
-
-.travelmakecallender .img {
-  height: 40px;
-  left: 255px;
-  position: absolute;
-  top: 161px;
-  width: 40px;
-}
-
-.travelmakecallender .select-button-2 {
+.travelmakecallender-wrapper .select-date {
   height: 40px;
   left: 205px;
   position: absolute;
@@ -202,47 +227,7 @@
   width: 40px;
 }
 
-.travelmakecallender .dot {
-  height: 8px;
-  left: 162px;
-  position: absolute;
-  top: 645px;
-  width: 50px;
-}
-
-.travelmakecallender .pagination-active {
-  background-color: #0002ff;
-  border-radius: 4.21px;
-  height: 8px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 8px;
-}
-
-.travelmakecallender .pagination-deactive {
-  background-color: #1e1e1e;
-  border-radius: 4.21px;
-  height: 8px;
-  left: 42px;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  width: 8px;
-}
-
-.travelmakecallender .pagination-deactive-2 {
-  background-color: #1e1e1e;
-  border-radius: 4.21px;
-  height: 8px;
-  left: 21px;
-  opacity: 0.2;
-  position: absolute;
-  top: 0;
-  width: 8px;
-}
-
-.travelmakecallender .next-button-instance {
+.travelmakecallender-wrapper .next-button-instance {
   left: 29px !important;
   position: absolute !important;
   top: 701px !important;
