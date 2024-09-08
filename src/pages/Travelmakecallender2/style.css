@@ -3,6 +3,7 @@
   height: 812px;
   position: relative;
   width: 375px;
+  
 }
 
 .travelmakecallender-wrapper .text-wrapper-6 {
@@ -16,7 +17,7 @@
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 106px;
+  top: 80px;
   width: 262px;
 }
 
@@ -105,9 +106,9 @@
   flex-direction: column;
   gap: 2px;
   height: 302px;
-  left: 0;
+  left: 10px;
   position: absolute;
-  top: 0;
+  top: 150px;
   width: 346px;
 }
 
