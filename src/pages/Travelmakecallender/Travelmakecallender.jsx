@@ -8,7 +8,7 @@ import CustomCalendar from "src/components/Calendar/Calendar";
 import { ThemeProvider } from "styled-components"; // styled-components의 ThemeProvider 사용
 import { instance } from "src/apis/axios";
 
-export const Travelmakecallender2 = () => {
+export const Travelmakecallender = () => {
   const [departDate, setDepartDate] = useState(null);
   const [arriveDate, setArriveDate] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);

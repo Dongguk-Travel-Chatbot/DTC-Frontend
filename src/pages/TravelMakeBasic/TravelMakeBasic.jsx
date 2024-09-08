@@ -15,7 +15,7 @@ export const TravelMakeBasic = () => {
 
   const navigate = useNavigate(); // react-router-dom에서 가져오기
   const handleClick = () => {
-    navigate("/travel-callender2"); // 특정 경로로 이동
+    navigate("/travel-callender"); // 특정 경로로 이동
   };
 
   return (
