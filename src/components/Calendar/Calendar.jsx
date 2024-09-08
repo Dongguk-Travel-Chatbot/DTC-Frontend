@@ -10,9 +10,17 @@ const StyledCalendarWrapper = styled.div`
     border: none;
     height: 403px;
   }
-
+  .react-calendar__navigation__next-button,
+  .react-calendar__navigation__next2-button,
+  .react-calendar__navigation__prev-button,
+  .react-calendar__navigation__prev2-button {
+    font-size: 24px; /* 폰트 크기 변경 */
+    color: ${({ theme }) => theme.color.brown};
+    gap:5px;
+  }
+  
   .react-calendar__navigation {
-    background: ${({ theme }) => theme.color.blue};
+    background: ${({ theme }) => theme.color.white};
     border-bottom: 4px solid ${({ theme }) => theme.color.brown};
     height: 80px;
     border-radius: 20px 20px 0 0;
@@ -31,8 +39,8 @@ const StyledCalendarWrapper = styled.div`
 
   .react-calendar__navigation button:enabled:hover,
   .react-calendar__navigation button:enabled:focus {
-    background-color: ${({ theme }) => theme.color.blue};
-    border-radius: 20px 20px 0 0;
+    background-color: ${({ theme }) => theme.color.white};
+    border-radius: 20px;
   }
 
   .react-calendar__tile--now {
@@ -68,7 +76,7 @@ const StyledCalendarWrapper = styled.div`
 
   .react-calendar__tile {
     text-align: center;
-    height: 50px;
+    height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

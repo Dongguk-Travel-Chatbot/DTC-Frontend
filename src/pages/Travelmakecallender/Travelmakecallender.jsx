@@ -69,9 +69,10 @@ export const Travelmakecallender = () => {
 
   const theme = {
     color: {
-      pink: "#ff69b4",
+      pink: "#ffd5eb",
       brown: "#8b4513",
-      blue: "#04a4fa",
+      blue: "#d4e4ff",
+      white: "white",
     },
   };
 
